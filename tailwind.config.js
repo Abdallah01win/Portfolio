@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,vue}",
   ],
   theme: {
     extend: {
@@ -10,16 +10,22 @@ module.exports = {
         'myYellow': '#D5FF40',
         'myBlue': {
           '100' : '#3A53E3',
+          '200' : '#2C7FDD',
+          '300' : '#01BAEF',
         },
         'myDark': {
-          '100': '#101010',
+          '100': '#0C0C0C',
           '200': '#171717',
-          '300': '#29282B'
+          '300': '#1D201F',
+          '400': '#29282B'
         },
         'myGray': {
           '100': '#F8F8F8',
           '200': '#C4C4C4',
+          '300': '#D1DEDE',
+          '400': '#A0AAB2',
         },
+        'myWhite': '#FAFFFD'
       }
     },
   },
