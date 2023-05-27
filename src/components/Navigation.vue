@@ -1,25 +1,34 @@
 <script setup>
 import ArrowUp from './icons/ArrowUp.vue';
+import Glob from './icons/Glob.vue';
+import List from './icons/List.vue';
 </script>
 <template>
-  <div class="bg-myBlue-100">
     <nav
-      class="flex items-center justify-between py-3 xl:max-w-[1024px] mx-auto"
+      class="flex items-center justify-between py-4 xl:max-w-[1024px] mx-auto"
     >
-      <div>Abdallah</div>
-      <ul class="flex items-center gap-x-8">
+      <div class="font-bold text-lg">Abdallah</div>
+      <!-- <ul class="flex items-center gap-x-8">
         <li>About</li>
         <li>Projects</li>
         <li>Contact</li>
-      </ul>
-      <div>
-        <Button class="bg-transparent border border-myWhite py-1 px-3 flex items-center gap-x-1">
+      </ul> -->
+      <div class="flex items-center gap-x-4">
+        <button class="bg-myDark-100 text-myWhite  rounded-full py-2 px-4 flex items-center gap-x-1">
             <span>Get in-touch</span>
             <span>
                 <ArrowUp class="w-5"/>
             </span>
-        </Button>
+        </button>
+
+        <div class="flex items-center gap-x-2 border border-myDark-100 rounded-full py-2 px-3">
+          <Glob class="w-5"/>
+          <span>En</span>
+        </div>
+
+        <div class="grid place-content-center p-2 border border-myDark-100 rounded-full">
+          <List class="w-5"/>
+        </div>
       </div>
     </nav>
-  </div>
 </template>

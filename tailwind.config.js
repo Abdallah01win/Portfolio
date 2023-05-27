@@ -26,6 +26,9 @@ module.exports = {
           '400': '#A0AAB2',
         },
         'myWhite': '#FAFFFD'
+      },
+      fontFamily:{
+        "Inter" : "Inter, sans"
       }
     },
   },
