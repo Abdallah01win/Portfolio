@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx,vue}",
+    "./src/**/*.{js,ts,jsx,tsx,vue,*}",
   ],
   theme: {
     extend: {
@@ -24,6 +24,7 @@ module.exports = {
           '200': '#C4C4C4',
           '300': '#D1DEDE',
           '400': '#A0AAB2',
+          '500': '#969696',
         },
         'myWhite': '#FAFFFD'
       },

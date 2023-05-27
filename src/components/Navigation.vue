@@ -14,19 +14,19 @@ import List from './icons/List.vue';
         <li>Contact</li>
       </ul> -->
       <div class="flex items-center gap-x-4">
-        <button class="bg-myDark-100 text-myWhite  rounded-full py-2 px-4 flex items-center gap-x-1">
+        <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-4 flex items-center gap-x-1">
             <span>Get in-touch</span>
             <span>
                 <ArrowUp class="w-5"/>
             </span>
         </button>
 
-        <div class="flex items-center gap-x-2 border border-myDark-100 rounded-full py-2 px-3">
+        <div class="flex items-center gap-x-2 border border-myDark-100 rounded-full py-2 px-3 cursor-pointer">
           <Glob class="w-5"/>
           <span>En</span>
         </div>
 
-        <div class="grid place-content-center p-2 border border-myDark-100 rounded-full">
+        <div class="grid place-content-center p-3 border border-myDark-100 rounded-full cursor-pointer">
           <List class="w-5"/>
         </div>
       </div>
