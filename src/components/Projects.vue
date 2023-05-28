@@ -24,7 +24,7 @@ export default {
 };
 </script>
 <template>
-    <section class="xl:max-w-[1024px] mx-auto">
+    <section class="xl:max-w-[1024px] mx-auto mb-12">
         <h2 class="text-3xl font-bold mb-8">
             <span>Featured </span>
             <span class="text-myGray-500 italic">Projects</span>
@@ -48,7 +48,7 @@ export default {
             </div>
         </div>
 
-        <div class="flex items-center justify-center mt-12">
+        <div class="flex items-center justify-center mt-8">
             <button class="rounded-full py-3 px-8 flex items-center justify-center gap-x-3 border border-myDark-100 text-sm">
                 <span>See More Projects</span>
                 <ArrowUp class="w-5"/>
