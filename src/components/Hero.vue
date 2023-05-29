@@ -10,14 +10,14 @@ import ArrowDown from './icons/ArrowDown.vue';
         <p class="xl:max-w-[60%] my-12 leading-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, ipsum, blanditiis asperiores at non ad earum provident officia.
         </p>
-        <div class="flex items-center gap-x-4">
-            <button class="rounded-full py-2 px-8 bg-myDark-100 text-myWhite flex items-center gap-x-2">
+        <div class="flex items-center gap-x-4 font-normal">
+            <button class="rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
                 <span>Contact</span>
                 <span>
                     <ArrowUp class="w-5"/>
                 </span>
             </button>
-            <button class="border border-myDark-100 rounded-full py-2 px-8 flex items-center gap-x-2">
+            <button class="border border-myDark-100 rounded-full py-2 px-10 flex items-center gap-x-2">
                 <span>Projects</span>
                 <span>
                     <ArrowDown class="w-5"/>

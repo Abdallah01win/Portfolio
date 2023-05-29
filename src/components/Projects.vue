@@ -1,10 +1,14 @@
 <script>
 import ArrowUp from './icons/ArrowUp.vue';
 import { ref } from 'vue';
+import Plus from './icons/Plus.vue';
+import X from './icons/X.vue';
 export default {
     components: {
-        ArrowUp
-    },
+    ArrowUp,
+    Plus,
+    X
+},
     setup() {
         const showDiv = ref([]);
         const items = [
@@ -35,7 +39,8 @@ export default {
                 <div class="rounded-3xl h-64 bg-myYellow mb-3 relative">
                     <div class="rounded-full bg-myWhite w-fit p-3 absolute bottom-0 right-0 mr-4 mb-4 cursor-pointer"
                         @click="showDiv[index] = !showDiv[index]">
-                        <ArrowUp class="w-6" />
+                        <Plus class="w-6" v-if="!showDiv[index]"/>
+                        <X v-else />
                     </div>
                     <div v-if="showDiv[index]" class="bg-myGray-300 rounded-3xl py-3 px-6 h-full">
                         <p>{{ item.discription }}</p>
