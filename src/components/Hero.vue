@@ -7,7 +7,7 @@ import ArrowDown from './icons/ArrowDown.vue';
         <div class="text-7xl font-bold">
             Design. Development. <span class="text-myGray-500 italic">Mastership</span>
         </div>
-        <p class="xl:max-w-[60%] my-12 leading-8">
+        <p class="xl:max-w-[60%] my-12 leading-8 text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, ipsum, blanditiis asperiores at non ad earum provident officia.
         </p>
         <div class="flex items-center gap-x-4 font-normal">

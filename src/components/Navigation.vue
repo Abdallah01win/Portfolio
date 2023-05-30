@@ -29,7 +29,7 @@ import List from "./icons/List.vue";
       </div>
 
       <div
-        class="grid place-content-center p-3 border border-myDark-100 rounded-full cursor-pointer"
+        class="grid place-content-center p-2 border border-myDark-100 rounded-full cursor-pointer"
       >
         <List class="w-5" />
       </div>

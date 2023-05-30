@@ -6,6 +6,9 @@ import PythonLogo from './icons/PythonLogo.vue';
 import HtmlLogo from './icons/HtmlLogo.vue';
 import CssLogo from './icons/CssLogo.vue';
 import SassLogo from './icons/SassLogo.vue';
+import PhpLogo from './icons/PhpLogo.vue';
+import CLogo from './icons/CLogo.vue';
+import GitLogo from './icons/GitLogo.vue';
 </script>
 <template>
     <section class="xl:max-w-[1024px] mx-auto my-12">
@@ -71,6 +74,40 @@ import SassLogo from './icons/SassLogo.vue';
                     </span>
                 </span>
             </div>
+            <!-- <div class="border border-myDark-100 rounded-full /py-2 /px-4">
+                <span class="flex items-center justify-center gap-x-3 py-3">
+                    <CLogo class="w-8 fill-myDark-100"/>
+                    <span class="text-sm font-semibold">
+                        C
+                    </span>
+                </span>
+            </div>
+            <div class="border border-myDark-100 rounded-full /py-2 /px-4">
+                <span class="flex items-center justify-center gap-x-3 py-3">
+                    <GitLogo class="fill-myDark-100"/>
+                    <span class="text-sm font-semibold">
+                        Git
+                    </span>
+                </span>
+            </div> -->
+            <div class="border border-myDark-100 rounded-full /py-2 /px-4">
+                <span class="flex items-center justify-center gap-x-4 py-3">
+                    <PhpLogo class="w-8 fill-myDark-100 scale-[1.3]"/>
+                    <span class="text-sm font-semibold">
+                        PHP
+                    </span>
+                </span>
+            </div>
         </div>
+
+        <!-- <div class="flex items-center gap-x-10 mt-10">
+            <div class="flex items-center gap-x-3">
+                <span class="text-6xl font-bold">02+</span>
+                <span class="text-lg uppercase flex flex-col text-myGray-500 justify-evenly">
+                    <span>Years of</span>
+                    <span>experiance</span>
+                </span>
+            </div>
+        </div> -->
     </section>
 </template>
