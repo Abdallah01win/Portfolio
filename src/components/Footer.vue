@@ -10,7 +10,7 @@ import TwitterLogo from './icons/TwitterLogo.vue';
         <div></div>
 
         <div class="flex items-center justify-between  border-t border-myGray-500/80 py-6 ">
-            <div class="">2023 &#169; By Abdallah Bari</div>
+            <div class="">2023 &#169; By <span class="font-semibold">Abdallah Bari</span></div>
             <div class="flex items-center gap-x-5">
                 <span>
                     <a href="https://github.com/Abdallah01win" target="_blank">
