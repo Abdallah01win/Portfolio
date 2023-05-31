@@ -92,9 +92,41 @@ import GitLogo from './icons/GitLogo.vue';
             </div> -->
             <div class="border border-myDark-100 rounded-full /py-2 /px-4">
                 <span class="flex items-center justify-center gap-x-4 py-3">
-                    <PhpLogo class="w-8 fill-myDark-100 scale-[1.3]"/>
+                    <img src="../assets/svg/php-logo.svg" class="w-8" />
                     <span class="text-sm font-semibold">
                         PHP
+                    </span>
+                </span>
+            </div>
+            <div class="border border-myDark-100 rounded-full /py-2 /px-4">
+                <span class="flex items-center justify-center gap-x-4 py-3">
+                    <img src="../assets/svg/c-logo.svg" class="w-8" />
+                    <span class="text-sm font-semibold">
+                        C Lang
+                    </span>
+                </span>
+            </div>
+            <div class="border border-myDark-100 rounded-full /py-2 /px-4">
+                <span class="flex items-center justify-center gap-x-4 py-3">
+                    <img src="../assets/svg/mysql-official.svg" class="w-8" />
+                    <span class="text-sm font-semibold">
+                        MySQL
+                    </span>
+                </span>
+            </div>
+            <div class="border border-myDark-100 rounded-full flex items-center justify-center">
+                <span class="flex items-center justify-center gap-x-4 py-3">
+                    <img src="../assets/svg/tailwind-logo.svg" class="w-8" />
+                    <span class="text-sm font-semibold">
+                        Tailwind
+                    </span>
+                </span>
+            </div>
+            <div class="border border-myDark-100 rounded-full">
+                <span class="flex items-center justify-center gap-x-4 py-3">
+                    <img src="../assets/svg/git-icon.svg" class="w-8" />
+                    <span class="text-sm font-semibold">
+                        Git
                     </span>
                 </span>
             </div>
