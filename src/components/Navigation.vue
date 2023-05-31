@@ -11,6 +11,9 @@ import List from "./icons/List.vue";
         <li>Projects</li>
         <li>Contact</li>
       </ul> -->
+
+      <!-- on menue button click the nav elements should push the button and lang to the left and slide to take their place -->
+      <!-- the menue should turn into an X -->
     <div class="flex items-center gap-x-4">
       <button
         class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 flex items-center gap-x-1 font-normal"
