@@ -68,7 +68,7 @@ export default {
           </div>
           <div
             v-if="showDiv[index]"
-            class="bg-myGray-500 rounded-3xl py-4 px-5 h-full relative"
+            class="bg-myGray-600 rounded-3xl py-4 px-5 h-full relative"
           >
             <div class="flex items-center gap-x-3 mb-3">
               <a href="#" class="p-2 bg-myWhite rounded-full w-fit">

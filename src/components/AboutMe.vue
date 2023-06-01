@@ -5,7 +5,7 @@ import Compus from './icons/Compus.vue';
 import MapPin from './icons/MapPin.vue';
 </script>
 <template>
-  <section class="xl:max-w-[1024px] mx-auto mb-12">
+  <section class="xl:max-w-[1024px] mx-auto mb-20">
     <h2 class="text-3xl font-bold mb-8">
       <span>About </span>
       <span class="text-myGray-500 italic">Me</span>
