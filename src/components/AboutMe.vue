@@ -18,7 +18,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full p-y-2" />
         </div>
-        <p class="leading-8 font-light text-base">
+        <p class="leading-8 font-normal text-base">
           <!-- English and relizing i love tech and giving up the masters -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
@@ -37,7 +37,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full p-y-2" />
         </div>
-        <p class="leading-8 font-light text-base">
+        <p class="leading-8 font-normal text-base">
           <!-- The strugel and journy to learn  -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
@@ -56,7 +56,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full p-y-2" />
         </div>
-        <p class="leading-8 font-light text-base">
+        <p class="leading-8 font-normal text-base">
           <!-- The present and idk what else -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
@@ -75,7 +75,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full p-y-2" />
         </div>
-        <p class="leading-8 font-light text-base">
+        <p class="leading-8 font-normal text-base">
           <!-- The future vision and how you want to grow as dev -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi

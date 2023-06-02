@@ -96,13 +96,13 @@ export default {
       </div>
     </div>
 
-    <div class="flex items-center justify-center mt-8">
+    <!-- <div class="flex items-center justify-center mt-4">
       <button
         class="rounded-full py-3 px-8 flex items-center justify-center gap-x-3 border border-myDark-100 //text-sm"
       >
         <span>See More Projects</span>
         <ArrowUp class="w-5" />
       </button>
-    </div>
+    </div> -->
   </section>
 </template>

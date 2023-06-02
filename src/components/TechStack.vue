@@ -48,7 +48,7 @@ export default {
 };
 </script>
 <template>
-    <section class="xl:max-w-[1024px] mx-auto my-20">
+    <section class="xl:max-w-[1024px] mx-auto my-12">
         <h2 class="text-3xl font-bold mb-8">
             <span>Featured </span>
             <span class="text-myGray-500 italic">Technologies</span>
