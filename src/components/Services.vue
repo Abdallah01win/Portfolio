@@ -27,7 +27,7 @@ export default {
                         </span>
                         <h2 class="font-bold text-lg">Full SDLC</h2>
                     </div>
-                    <p class="leading-6">
+                    <p class="leading-6 font-normal">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores repellat totam ea
                         consequuntur obcaecati impedit dolorem vitae at nostrum
                     </p>
@@ -39,7 +39,7 @@ export default {
                         </span>
                         <h2 class="font-bold text-lg">Maintainance</h2>
                     </div>
-                    <p class="leading-6">
+                    <p class="leading-6 font-normal">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores repellat totam ea
                         consequuntur obcaecati impedit dolorem vitae at nostrum
                     </p>
@@ -51,7 +51,7 @@ export default {
                         </span>
                         <h2 class="font-bold text-lg">Feature Development</h2>
                     </div>
-                    <p class="leading-6">
+                    <p class="leading-6 font-normal">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores repellat totam ea
                         consequuntur obcaecati impedit dolorem vitae at nostrum
                     </p>
