@@ -58,7 +58,7 @@ export default {
 
     <div class="grid grid-cols-2 gap-8">
       <div v-for="(item, index) in items" :key="index">
-        <div class="rounded-3xl h-64 bg-myYellow mb-3 relative">
+        <div class="rounded-3xl h-64 bg-myBlue-400 mb-3 relative">
           <div
             class="rounded-full bg-myWhite w-fit p-3 absolute bottom-0 right-0 mr-4 mb-4 cursor-pointer z-20"
             @click="showDiv[index] = !showDiv[index]"

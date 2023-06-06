@@ -33,7 +33,7 @@ export default {
 
 </script>
 <template>
-    <main class="xl:max-w-[1024px] mx-auto py-24 /hero relative">
+    <main class="/hero xl:max-w-[1024px] mx-auto py-24 relative">
         <div>
             <div class="text-7xl font-bold">
                 Design. Development. <span class="text-myGray-500 italic">Mastership</span>
@@ -57,15 +57,9 @@ export default {
                 </button>
             </div>
         </div>
-        <div class="flex gap-x-8 w-fit absolute bottom-0 right-0 pb-24 /translate-y-[-50%]">
-            <!-- <div class="flex items-center justify-center w-[200px] h-[200px] rounded-full border border-myDark-100 relative">
-                <div class="w-full h-full absolute">
-                    <div ref="circleTextRef" class="text">Abdallah Bari - Web Development</div>
-                </div>
-                <ArrowUp class="w-8" />
-            </div> -->
-            <div class="flex flex-col items-center /justify-evenly gap-y-4">
-                <!-- <div class="/h-14 border-r border-myDark-100 mb-1"></div> -->
+        <div class="flex flex-col items-center gap-x-8 w-fit absolute bottom-0 right-0 py-24 h-full">
+            <div class="h-full border-r border-myGray-500 mb-4"></div>
+            <div class="flex flex-col items-center gap-y-4">
                 <div>
                     <a href="https://github.com/Abdallah01win" target="_blank">
                         <GithubLogo class="w-6 fill-myDark-100" />
@@ -81,18 +75,14 @@ export default {
                         <LinkedInLogo class="w-6 fill-myDark-100" />
                     </a>
                 </div>
-
-                <div class="h-16 border-r border-myDark-100 mt-1"></div>
             </div>
+            <div class="h-full border-r border-myGray-500 mt-4"></div>
         </div>
     </main>
 </template>
 
 <style scoped>
 
-.text span{
-    transform-origin: 0 100px;
-}
 .hero {
     background-color: hsla(151, 0%, 100%, 1);
     background-image:

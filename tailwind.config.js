@@ -8,10 +8,12 @@ module.exports = {
     extend: {
       colors:{
         'myYellow': '#D5FF40',
+        'lima': '#bced09',
         'myBlue': {
           '100' : '#3A53E3',
           '200' : '#2C7FDD',
           '300' : '#01BAEF',
+          '400' : '#1098F7',
         },
         'myDark': {
           '100': '#0C0C0C',
@@ -25,7 +27,7 @@ module.exports = {
           '300': '#D1DEDE',
           '400': '#A0AAB2',
           '500': '#969696',
-          '600': '#E2E4F3',
+          '600': '#F3F3F3',
         },
         'myWhite': '#FAFFFD'
       },

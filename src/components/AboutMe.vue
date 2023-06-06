@@ -16,7 +16,7 @@ import MapPin from './icons/MapPin.vue';
           <div class="p-2 border border-myDark-100 rounded-full w-fit">
             <Compus class="w-6 fill-myDark-100" />
           </div>
-          <hr class="w-full p-y-2" />
+          <hr class="w-full" />
         </div>
         <p class="leading-8 font-normal text-base">
           <!-- English and relizing i love tech and giving up the masters -->
@@ -35,7 +35,7 @@ import MapPin from './icons/MapPin.vue';
           <div class="p-2 border border-myDark-100 rounded-full w-fit">
             <Code class="w-6 fill-myDark-100" />
           </div>
-          <hr class="w-full p-y-2" />
+          <hr class="w-full" />
         </div>
         <p class="leading-8 font-normal text-base">
           <!-- The strugel and journy to learn  -->
@@ -54,7 +54,7 @@ import MapPin from './icons/MapPin.vue';
           <div class="p-2 border border-myDark-100 rounded-full w-fit">
             <MapPin class="w-6 fill-myDark-100" />
           </div>
-          <hr class="w-full p-y-2" />
+          <hr class="w-full" />
         </div>
         <p class="leading-8 font-normal text-base">
           <!-- The present and idk what else -->
@@ -73,7 +73,7 @@ import MapPin from './icons/MapPin.vue';
           <div class="p-2 border border-myDark-100 rounded-full w-fit">
             <Mountains class="w-6 fill-myDark-100" />
           </div>
-          <hr class="w-full p-y-2" />
+          <hr class="w-full" />
         </div>
         <p class="leading-8 font-normal text-base">
           <!-- The future vision and how you want to grow as dev -->
