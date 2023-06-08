@@ -10,26 +10,23 @@ export default {
     List,
   },
   setup() {
-    function toggelMenu() {
-      console.log('clicked')
+    const isNavOpen = ref(false);
+    const toggelMenu = () => {
+      isNavOpen.value = !isNavOpen.value;
     };
-    return { toggelMenu };
+    return {
+      isNavOpen,
+      toggelMenu,
+    };
   }
 }
 </script>
 <template>
   <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] mx-auto">
     <div class="font-bold text-lg">Abdallah</div>
-    <!-- <ul class="flex items-center gap-x-8" ref="menu">
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
-    </ul> -->
 
-    <!-- on menue button click the nav elements should push the button and lang to the left and slide to take their place -->
-    <!-- the menue should turn into an X -->
-    <div class="flex items-center gap-x-4">
-      <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 flex items-center gap-x-1 font-normal">
+    <div class="flex items-center /gap-x-4">
+      <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 mr-4 flex items-center gap-x-1 font-normal">
         <span>Get in-touch</span>
         <span>
           <ArrowUp class="w-5" />
@@ -41,12 +38,40 @@ export default {
         <span>En</span>
       </div>
 
+      <hr class="hr /rotate-90 h-8 w-[1px] bg-myGray-500 mx-4">
+      <div :class="['navigation', { 'show': isNavOpen }]">
+        <ul class="flex items-center gap-x-8 nav-links">
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>
 
-
-      <div class="grid place-content-center p-2 border border-myDark-100 rounded-full cursor-pointer"
+      <div class="grid place-content-center p-2 border border-myDark-100 rounded-full cursor-pointer toggle-button"
         @click="toggelMenu()">
         <List class="w-5" />
       </div>
     </div>
   </nav>
 </template>
+
+<style scoped>
+.navigation {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.navigation.show {
+  width: 230px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.toggle-button {
+  cursor: pointer;
+}
+</style>
