@@ -10,7 +10,7 @@ import ArrowUp from "./icons/ArrowUp.vue";
     <div class="bg-myGray-600 p-10 rounded-3xl">
       <div class="mb-4">
         <h2 class="text-5xl font-bold mb-3">Have an Idea? I got the skills.</h2>
-        <p class="leading-6">
+        <p class="leading-8 font-normal">
           Let's work together to make your visions a reality. Tell us more about
           yourself and what's on your mind. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium quibusdam cupiditate doloribus, architecto voluptates optio mollitia obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
