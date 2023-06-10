@@ -19,24 +19,28 @@ export default {
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
+        image: "src/assets/images/passwords.png"
       },
       {
         title: "News Magazine Website",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
+        image: ""
       },
       {
         title: "News Magazine Website",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
+        image: ""
       },
       {
         title: "News Magazine Website",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
+        image: "./"
       },
     ];
     for (let i = 0; i < items.length; i++) {
@@ -58,7 +62,9 @@ export default {
 
     <div class="grid grid-cols-2 gap-8">
       <div v-for="(item, index) in items" :key="index">
-        <div class="rounded-3xl h-64 bg-myBlue-400 mb-3 relative">
+        <div class="rounded-3xl h-72 bg-myBlue-400 mb-3 relative border border-myDark-100 overflow-hidden">
+          <img :src="item.image" alt="project" class="h-full w-full">
+          <!-- Exported image at 1300 * 720 -->
           <div
             class="rounded-full bg-myWhite w-fit p-3 absolute bottom-0 right-0 mr-4 mb-4 cursor-pointer z-20"
             @click="showDiv[index] = !showDiv[index]"
