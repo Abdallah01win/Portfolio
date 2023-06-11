@@ -19,28 +19,36 @@ export default {
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-        image: "src/assets/images/passwords.png"
+        image: "src/assets/images/passwords.png",
+        repo: "https://www.github.com/abdallah01win/portfolio",
+        preview: ""
       },
       {
         title: "News Magazine Website",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-        image: ""
+          image: "src/assets/images/passwords.png",
+          repo: "",
+          preview: ""
       },
       {
         title: "News Magazine Website",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-        image: ""
+          image: "src/assets/images/passwords.png",
+          repo: "",
+          preview: ""
       },
       {
         title: "News Magazine Website",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-        image: "./"
+          image: "src/assets/images/passwords.png",
+          repo: "",
+          preview: ""
       },
     ];
     for (let i = 0; i < items.length; i++) {
@@ -62,8 +70,9 @@ export default {
 
     <div class="grid grid-cols-2 gap-8">
       <div v-for="(item, index) in items" :key="index">
-        <div class="rounded-3xl h-72 bg-myBlue-400 mb-3 relative border border-myDark-100 overflow-hidden">
-          <img :src="item.image" alt="project" class="h-full w-full">
+        <div
+        class="rounded-3xl h-72 mb-3 relative border border-myGray-500/80 overflow-hidden">
+          
           <!-- Exported image at 1300 * 720 -->
           <div
             class="rounded-full bg-myWhite w-fit p-3 absolute bottom-0 right-0 mr-4 mb-4 cursor-pointer z-20"
@@ -77,13 +86,12 @@ export default {
             class="bg-myGray-600 rounded-3xl py-4 px-5 h-full relative"
           >
             <div class="flex items-center gap-x-3 mb-3">
-              <a href="#" class="p-2 bg-myWhite rounded-full w-fit">
+              <a :href="item.repo" class="p-2 bg-myWhite rounded-full w-fit">
                 <GithubLogo class="w-5 fill-myDark-100" />
               </a>
-              <a href="#" class="p-2 bg-myWhite rounded-full w-fit">
+              <a :href="item.preview" class="p-2 bg-myWhite rounded-full w-fit">
                 <ArrowUp class="w-5 fill-myDark-100" />
               </a>
-              <!-- <hr class="w-full p-y-2" /> -->
             </div>
             <p class="leading-6 font-normal">{{ item.discription }}</p>
             <div
@@ -94,6 +102,7 @@ export default {
               <div class="bg-white rounded-full px-4 py-2">Tailwind</div>
             </div>
           </div>
+          <img v-else :src="item.image" alt="project" class="h-full w-full">
         </div>
         <div>
           <div class="font-semibold text-base">{{ item.title }}</div>

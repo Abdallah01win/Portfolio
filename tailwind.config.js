@@ -29,7 +29,7 @@ module.exports = {
           '500': '#969696',
           '600': '#F3F3F3',
         },
-        'myWhite': '#FAFFFD'
+        'myWhite': '#FAFFFD',
       },
       fontFamily:{
         "Inter" : "Inter, sans"
