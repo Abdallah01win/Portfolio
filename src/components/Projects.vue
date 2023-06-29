@@ -19,7 +19,7 @@ export default {
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-        image: "src/assets/images/passwords.png",
+        image: "src/assets/images/passworld.png",
         repo: "https://www.github.com/abdallah01win/portfolio",
         preview: ""
       },
@@ -28,7 +28,7 @@ export default {
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-          image: "src/assets/images/passwords.png",
+          image: "src/assets/images/passworld.png",
           repo: "",
           preview: ""
       },
@@ -37,7 +37,7 @@ export default {
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-          image: "src/assets/images/passwords.png",
+          image: "src/assets/images/passworld.png",
           repo: "",
           preview: ""
       },
@@ -46,7 +46,7 @@ export default {
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
-          image: "src/assets/images/passwords.png",
+          image: "src/assets/images/passworld.png",
           repo: "",
           preview: ""
       },
