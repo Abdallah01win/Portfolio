@@ -39,18 +39,17 @@ export default {
                 Design. Development. <span class="text-myGray-500 italic">Mastership</span>
             </div>
             <p class="xl:max-w-[60%] my-12 leading-8 text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, ipsum, blanditiis asperiores at non ad
-                earum provident officia.
+                I <span class="italic capitalize font-semibold">design</span>, <span class="italic capitalize font-semibold">develop</span>, and <span class="italic capitalize font-semibold">maintain</span> high-quality software systems and applications that make life easier and, hopefully, the world <span class="italic capitalize font-semibold">a better place</span>.
             </p>
             <div class="flex items-center gap-x-4 font-normal">
                 <button class="rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
-                    <span>Contact</span>
+                    <span>Contact Me</span>
                     <span>
                         <ArrowUp class="w-5" />
                     </span>
                 </button>
                 <button class="border border-myDark-100 rounded-full py-2 px-10 flex items-center gap-x-2">
-                    <span>Projects</span>
+                    <span>My Projects</span>
                     <span>
                         <ArrowDown class="w-5" />
                     </span>

@@ -6,10 +6,7 @@ import TwitterLogo from './icons/TwitterLogo.vue';
 </script>
 <template>
     <footer class="xl:max-w-[1024px] mx-auto">
-
-        <div></div>
-
-        <div class="flex items-center justify-between  border-t border-myGray-500/80 py-6 ">
+        <div class="flex items-center justify-between  border-t border-myGray-500/80 py-5 ">
             <div class="">2023 &#169; By <span class="font-semibold">Abdallah Bari</span></div>
             <div class="flex items-center gap-x-5">
                 <span>

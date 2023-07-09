@@ -10,7 +10,7 @@ import MapPin from './icons/MapPin.vue';
       <span>About </span>
       <span class="text-myGray-500 italic">Me</span>
     </h2>
-    <div class="grid grid-cols-3 gap-y-8">
+    <!-- <div class="grid grid-cols-3 gap-y-8">
       <div class="rounded-3xl border border-myDark-100 px-8 py-6 col-span-2">
         <div class="flex items-center gap-x-4 mb-2">
           <div class="p-2 border border-myDark-100 rounded-full w-fit">
@@ -18,8 +18,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full" />
         </div>
-        <p class="leading-8 font-normal text-base">
-          <!-- English and relizing i love tech and giving up the masters -->
+        <p class="leading-8 font-normal text-base text-myDark-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
           voluptas alias, modi et nobis. Est sed amet dolore earum sequi vel,
@@ -37,8 +36,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full" />
         </div>
-        <p class="leading-8 font-normal text-base">
-          <!-- The strugel and journy to learn  -->
+        <p class="leading-8 font-normal text-base text-myDark-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
           voluptas alias, modi et nobis. Est sed amet dolore earum sequi vel,
@@ -56,8 +54,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full" />
         </div>
-        <p class="leading-8 font-normal text-base">
-          <!-- The present and idk what else -->
+        <p class="leading-8 font-normal text-base text-myDark-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
           voluptas alias, modi et nobis. Est sed amet dolore earum sequi vel,
@@ -75,8 +72,7 @@ import MapPin from './icons/MapPin.vue';
           </div>
           <hr class="w-full" />
         </div>
-        <p class="leading-8 font-normal text-base">
-          <!-- The future vision and how you want to grow as dev -->
+        <p class="leading-8 font-normal text-base text-myDark-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias
           exercitationem. Odit qui deserunt error ab ea aspernatur eligendi
           voluptas alias, modi et nobis. Est sed amet dolore earum sequi vel,
@@ -84,6 +80,16 @@ import MapPin from './icons/MapPin.vue';
           dolorem numquam quisquam quia quod, iusto rerum reiciendis corrupti
           debitis ut.
         </p>
+      </div>
+    </div> -->
+    <div class="grid grid-cols-2">
+      <div>
+        <p class="leading-8 text-base text-myDark-400">
+          Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with over two years of experience in the tech industry, and it all began with an HTML "Hello world!".
+        </p>
+      </div>
+
+      <div>
       </div>
     </div>
   </section>

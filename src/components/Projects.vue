@@ -12,16 +12,17 @@ export default {
     GithubLogo,
   },
   setup() {
-    const showDiv = ref([]);
+    const showDiv = ref([])
     const items = [
       {
-        title: "News Magazine Website",
+        title: "Passworld",
         tasks: "Front-end, Back-end, Design",
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
         image: "src/assets/images/passworld.png",
-        repo: "https://www.github.com/abdallah01win/portfolio",
-        preview: ""
+        repo: "https://github.com/Abdallah01win/generated-passwords/tree/mine",
+        preview: "https://passworld.pages.dev/",
+        
       },
       {
         title: "News Magazine Website",
@@ -64,7 +65,7 @@ export default {
 <template>
   <section class="xl:max-w-[1024px] mx-auto mb-12">
     <h2 class="text-3xl font-bold mb-8">
-      <span>Featured </span>
+      <span>My </span>
       <span class="text-myGray-500 italic">Projects</span>
     </h2>
 
@@ -86,10 +87,10 @@ export default {
             class="bg-myGray-600 rounded-3xl py-4 px-5 h-full relative"
           >
             <div class="flex items-center gap-x-3 mb-3">
-              <a :href="item.repo" class="p-2 bg-myWhite rounded-full w-fit">
+              <a :href="item.repo" target="_blank" class="p-2 bg-myWhite rounded-full w-fit">
                 <GithubLogo class="w-5 fill-myDark-100" />
               </a>
-              <a :href="item.preview" class="p-2 bg-myWhite rounded-full w-fit">
+              <a :href="item.preview" target="_blank" class="p-2 bg-myWhite rounded-full w-fit">
                 <ArrowUp class="w-5 fill-myDark-100" />
               </a>
             </div>

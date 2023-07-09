@@ -11,9 +11,9 @@ import Contact from '../components/Contact.vue';
   <main>
     <Hero />
     <Projects />
+    <AboutMe />
     <Services />
     <TechStack />
-    <AboutMe />
     <Contact />
   </main>
 </template>

@@ -1,19 +1,11 @@
-<script>
+<script setup>
 import Puzzel from './icons/Puzzel.vue';
-//import Maintainance from './icons/Maintainance.vue';
 import Code from './icons/Code.vue';
 import Settings from './icons/Settings.vue';
-export default {
-    components: {
-        Puzzel,
-        Code,
-        Settings
-    }
-}
 </script>
 <template>
     <section class="xl:max-w-[1024px] mx-auto my-12">
-        <h2 class="text-3xl font-bold mb-6">
+        <h2 class="text-3xl font-bold mb-8">
             <span>My </span>
             <span class="text-myGray-500 italic">Services</span>
         </h2>

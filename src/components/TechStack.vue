@@ -66,15 +66,5 @@ export default {
                 </span>
             </div>
         </div>
-
-        <!-- <div class="flex items-center gap-x-10 mt-10">
-            <div class="flex items-center gap-x-3">
-                <span class="text-6xl font-bold">02+</span>
-                <span class="text-lg uppercase flex flex-col text-myGray-500 justify-evenly">
-                    <span>Years of</span>
-                    <span>experiance</span>
-                </span>
-            </div>
-        </div> -->
     </section>
 </template>
