@@ -82,14 +82,20 @@ import MapPin from './icons/MapPin.vue';
         </p>
       </div>
     </div> -->
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 gap-x-8">
       <div>
         <p class="leading-8 text-base text-myDark-400">
-          Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with over two years of experience in the tech industry, and it all began with an HTML "Hello world!".
+          Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a
+          <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with over
+          two years of experience in the tech industry, and it all began with an HTML "Hello world!".
         </p>
       </div>
 
-      <div>
+      <div class="relative h-[350px]">
+        <div class="absolute w-[85%] top-[50%] left-0 translate-y-[-50%] z-10">
+          <img src="../assets/images/carbonImage.png" alt="carbon">
+        </div>
+        <div class="rounded-full border border-red-600 w-[300px] h-[300px] absolute top-[50%] right-0 translate-y-[-50%]"></div>
       </div>
     </div>
   </section>
