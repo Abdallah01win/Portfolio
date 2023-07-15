@@ -1,11 +1,16 @@
 <script setup>
+import ArrowUp from './icons/ArrowUp.vue';
 import Code from "./icons/Code.vue";
 import Mountains from './icons/Mountains.vue';
 import Compus from './icons/Compus.vue';
 import MapPin from './icons/MapPin.vue';
+import Js from "./icons/Js.vue";
+import VueLogo from "./icons/VueLogo.vue";
+import LaravelLogo from "./icons/LaravelLogo.vue";
+import PythonLogo from "./icons/PythonLogo.vue";
 </script>
 <template>
-  <section class="xl:max-w-[1024px] mx-auto mb-20">
+  <section class="xl:max-w-[1024px] mx-auto mb-24">
     <h2 class="text-3xl font-bold mb-8">
       <span>About </span>
       <span class="text-myGray-500 italic">Me</span>
@@ -84,18 +89,68 @@ import MapPin from './icons/MapPin.vue';
     </div> -->
     <div class="grid grid-cols-2 gap-x-8">
       <div>
-        <p class="leading-8 text-base text-myDark-400">
+        <p class="leading-8 text-base text-myDark-400 mb-2">
           Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a
           <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with over
           two years of experience in the tech industry, and it all began with an HTML "Hello world!".
         </p>
+        <p class="leading-8 text-base text-myDark-400 mb-6">
+          Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a
+          <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with over
+          two years of experience in the tech industry, and it all began with an HTML "Hello world!".
+        </p>
+        <button class="rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
+          <span>Learn More</span>
+          <span>
+            <ArrowUp class="w-5" />
+          </span>
+        </button>
       </div>
 
-      <div class="relative h-[350px]">
-        <div class="absolute w-[85%] top-[50%] left-0 translate-y-[-50%] z-10">
+      <div class="relative h-[320px]">
+        <div class="absolute w-[80%] top-[50%] left-0 translate-y-[-50%] z-10">
           <img src="../assets/images/carbonImage.png" alt="carbon">
         </div>
-        <div class="rounded-full border border-red-600 w-[300px] h-[300px] absolute top-[50%] right-0 translate-y-[-50%]"></div>
+        <div
+          class="rounded-full border border-myDark-100 w-[320px] h-[320px] absolute top-[50%] right-0 translate-y-[-50%] rotate-[45deg]">
+          
+          <!-- 2nd Cyrcle -->
+          <div
+            class="rounded-full border border-myDark-100 w-[220px] h-[220px] absolute top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] rotate-[-45deg] ">
+            <div
+              class="rounded-full bg-myGray-600 w-fit p-2 position absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] grid place-content-center">
+              <Js class="w-6" />
+            </div>
+            <div
+              class="rounded-full bg-myGray-600 w-fit p-2 position absolute top-[50%] right-0 translate-x-[50%] translate-y-[-50%]">
+              <img src="src/assets/svg/git-icon.svg" alt="git" class="w-6">
+            </div>
+            <div
+              class="rounded-full bg-myGray-600 w-fit p-2 position absolute bottom-0 right-[50%] translate-x-[50%] translate-y-[50%]">
+              <img src="src/assets/svg/c-logo.svg" alt="" class="w-6">
+            </div>
+          </div>
+          <!-- End 2nd Cyrcle -->
+
+          <!-- 1st Cyrcle Icons -->
+          <div
+            class="rounded-full bg-myGray-600 w-fit p-2 position absolute top-[50%] left-0 translate-x-[-50%] translate-y-50%] rotate-[-45deg]">
+            <LaravelLogo class="w-6" />
+          </div>
+          <div
+            class="rounded-full bg-myGray-600 w-fit p-2 position absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] grid place-content-center rotate-[-45deg]">
+            <VueLogo class="w-6" />
+          </div>
+          <div
+            class="rounded-full bg-myGray-600 w-fit p-2 position absolute top-[50%] right-0 translate-x-[50%] translate-y-[-50%] rotate-[-45deg]">
+            <img src="src/assets/svg/php-logo.svg" alt="" class="w-7">
+          </div>
+          <div
+            class="rounded-full bg-myGray-600 w-fit p-2 position absolute bottom-0 right-[50%] translate-x-[50%] translate-y-[50%] rotate-[-45deg]">
+            <PythonLogo class="w-6" />
+          </div>
+          <!-- End 1st Cyrcle Icons -->
+        </div>
       </div>
     </div>
   </section>

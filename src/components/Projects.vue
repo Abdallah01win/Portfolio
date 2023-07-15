@@ -63,7 +63,7 @@ export default {
 };
 </script>
 <template>
-  <section class="xl:max-w-[1024px] mx-auto mb-12">
+  <section class="xl:max-w-[1024px] mx-auto mb-24">
     <h2 class="text-3xl font-bold mb-8">
       <span>My </span>
       <span class="text-myGray-500 italic">Projects</span>
