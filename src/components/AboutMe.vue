@@ -1,4 +1,6 @@
 <script setup>
+
+import { RouterLink } from 'vue-router';
 import ArrowUp from './icons/ArrowUp.vue';
 import Code from "./icons/Code.vue";
 import Mountains from './icons/Mountains.vue';
@@ -95,28 +97,31 @@ import PythonLogo from "./icons/PythonLogo.vue";
           two years of experience in the tech industry, and it all began with an HTML "Hello world!".
         </p>
         <p class="leading-8 text-base text-myDark-400 mb-6">
-          Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a
-          <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with over
-          two years of experience in the tech industry, and it all began with an HTML "Hello world!".
+          My <span class="italic font-semibold">passion</span> for development fuels my desire to continuously hone my
+          skill set, learn new technologies, and strive
+          to be <span class="italic font-semibold">the best developer possible</span>.
+          And throughout my career, I aimed to do so by embracing every obstacle as an <span
+            class="italic font-semibold">opportunity</span> to evolve.
         </p>
-        <button class="rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
+        <RouterLink to="about" class="w-fit rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
           <span>Learn More</span>
           <span>
             <ArrowUp class="w-5" />
           </span>
-        </button>
+        </RouterLink>
+
       </div>
 
       <div class="relative h-[320px]">
-        <div class="absolute w-[80%] top-[50%] left-0 translate-y-[-50%] z-10">
+        <div class="absolute w-[83%] top-[50%] left-0 translate-y-[-50%] z-10">
           <img src="../assets/images/carbonImage.png" alt="carbon">
         </div>
         <div
-          class="rounded-full border border-myDark-100 w-[320px] h-[320px] absolute top-[50%] right-0 translate-y-[-50%] rotate-[45deg]">
-          
+          class="rounded-full border border-myGray-500 w-[320px] h-[320px] absolute top-[50%] right-0 translate-y-[-50%] rotate-[45deg]">
+
           <!-- 2nd Cyrcle -->
           <div
-            class="rounded-full border border-myDark-100 w-[220px] h-[220px] absolute top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] rotate-[-45deg] ">
+            class="rounded-full border border-myGray-500 w-[220px] h-[220px] absolute top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] rotate-[-45deg] ">
             <div
               class="rounded-full bg-myGray-600 w-fit p-2 position absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] grid place-content-center">
               <Js class="w-6" />
