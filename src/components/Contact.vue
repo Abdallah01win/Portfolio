@@ -3,12 +3,16 @@ import ArrowUp from "./icons/ArrowUp.vue";
 import FAQSection from "./FAQSection.vue";
 </script>
 <template>
-  <section class="bg-myGray-600 p-12 my-20 rounded-3xl ">
-    <div class="rounded-3xl xl:max-w-[1024px] mx-auto">
-      <div class="grid grid-cols-[1fr,0.9fr] gap-x-12 ">
+  <section class="xl:max-w-[1024px] mx-auto my-24">
+    <h2 class="text-3xl font-bold mb-8">
+      <span>Contact </span>
+      <span class="text-myGray-500 italic">Me</span>
+    </h2>
+    <div class="/bg-myGray-600 /py-10 /px-8 rounded-3xl ">
+      <div class="grid grid-cols-2 gap-x-12 ">
         <form action="#" method="post" class="flex flex-col gap-y-2">
           <div class="mb-3">
-            <h2 class="text-2xl font-bold mb-3">Ready to discuss your next project?</h2>
+            <h2 class="text-xl font-bold mb-2">Ready to discuss your next project?</h2>
             <p class="leading-6 text-myDark-400">I would love to hear from you! Get in touch and I'll respond
               promptly.
               Let's
