@@ -13,8 +13,7 @@ import FAQSection from "./FAQSection.vue";
         <form action="#" method="post" class="flex flex-col gap-y-2">
           <div class="mb-3">
             <h2 class="text-xl font-bold mb-2">Ready to discuss your next project?</h2>
-            <p class="leading-6 text-myDark-400">I would love to hear from you! Get in touch and I'll respond
-              promptly.
+            <p class="leading-6 text-myDark-400">I would love to hear from you!
               Let's
               embark on a
               journey of creativity and innovation together!</p>

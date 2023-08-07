@@ -116,7 +116,7 @@ import PythonLogo from "./icons/PythonLogo.vue";
 
       </div>
 
-      <div class="relative  flex items-center">
+      <div class="relative flex items-center">
         <div class="h-[320px]">
           <div class="absolute w-[83%] top-[50%] left-0 translate-y-[-50%] z-10">
             <img src="../assets/images/carbonImage.png" alt="carbon">
