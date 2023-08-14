@@ -16,7 +16,7 @@ const toggleAccordion = (index) => {
 </script>
 
 <template>
-  <div class="rounded-3xl border border-myGray-500 px-8 py-5 h-full">
+  <div class="rounded-3xl border border-myGray-500 px-8 py-5 h-full bg-myWhite">
     <div class="text-2xl font-semibold">Q&A</div>
     <div class="/overflow-y-scroll">
       <div v-for="(question, index) in questions" :key="index" @click="toggleAccordion(index)">

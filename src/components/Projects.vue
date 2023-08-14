@@ -23,7 +23,7 @@ export default {
 
       },
       {
-        title: "News Magazine Website",
+        title: "Voyager",
         tags: ['Vue', 'Tailwind', 'Vite'],
         discription:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
@@ -72,28 +72,32 @@ export default {
         <div class="bg-myGray-600 rounded-3xl h-72 relative border border-myGray-500/80 overflow-hidden">
 
           <!-- Exported image at 1300 * 720 -->
-          <div class="rounded-full bg-myWhite w-fit p-2.5 absolute bottom-0 right-0 mr-5 mb-4 cursor-pointer z-20"
+          <div
+            class="rounded-full bg-myWhite w-fit p-2.5 absolute bottom-0 right-0 mr-5 mb-4 cursor-pointer z-20 border border-myGray-500/80"
             @click="showDiv[index] = !showDiv[index]">
             <X :class="!showDiv[index] ? 'rotate-45' : ''" class="transition-all" />
           </div>
           <Transition name="fade">
-            <div v-show="showDiv[index]" class=" rounded-3xl py-4 px-5 h-full absolute top-0 left-0 w-full info-div">
+            <div v-show="showDiv[index]" class=" rounded-3xl py-4 px-5 h-full absolute top-0 left-0 w-full bg-white">
               <div class="flex items-center justify-between mb-3">
                 <div class="text-base font-bold">{{ item.title }}</div>
                 <div class="flex items-center gap-x-3">
-                  <a :href="item.repo" target="_blank" class="p-2 bg-myWhite rounded-full w-fit">
+                  <a :href="item.repo" target="_blank"
+                    class="p-2 bg-myWhite rounded-full border border-myGray-500/80 w-fit">
                     <GithubLogo class="w-5 fill-myDark-100" />
                   </a>
-                  <a :href="item.preview" target="_blank" class="p-2 bg-myWhite rounded-full w-fit">
+                  <a :href="item.preview" target="_blank"
+                    class="p-2 bg-myWhite rounded-full border border-myGray-500/80 w-fit">
                     <ArrowUp class="w-5 fill-myDark-100" />
                   </a>
                 </div>
               </div>
               <div>
-                <p class="leading-6 font-normal">{{ item.discription }}</p>
+                <p class="leading-7 font-normal">{{ item.discription }}</p>
               </div>
               <div class="flex items-center gap-x-3 mt-auto rounded-full ml-4 mb-4 w-fit bottom-0 left-0 absolute">
-                <div class="bg-white rounded-full text-xs px-4 py-1.5" v-for="tag in item.tags" :key="tag">{{ tag }}</div>
+                <div class="bg-myWhite rounded-full border border-myGray-500/80 text-xs px-4 py-1.5"
+                  v-for="tag in item.tags" :key="tag">{{ tag }}</div>
               </div>
             </div>
           </Transition>
@@ -116,24 +120,15 @@ export default {
 
 <style scoped>
 .fade-enter-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .fade-leave-active {
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-}
-
-.info-div {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 </style>
