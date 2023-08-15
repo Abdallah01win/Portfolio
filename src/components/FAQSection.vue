@@ -1,11 +1,11 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
+import ArrowUp from './icons/ArrowUp.vue';
 const questions = ref([
   { question: "Are you available for hire?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit dolorem reiciendis possimus ipsum sit rerum aspernatur provident dignissimos id?", isOpen: false },
   { question: "What technologies do you use?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit dolorem reiciendis possimus ipsum sit rerum aspernatur provident dignissimos id?", isOpen: false },
   { question: "Question 3", answer: "Answer 3", isOpen: false },
   { question: "Question 4", answer: "Answer 4", isOpen: false },
-  { question: "Question 5", answer: "Answer 5", isOpen: false },
 ]);
 
 const toggleAccordion = (index) => {
@@ -13,6 +13,11 @@ const toggleAccordion = (index) => {
     q.isOpen = i === index ? !q.isOpen : false;
   });
 };
+
+const showDescription = ref([])
+for (let i = 0; i < questions.length; i++) {
+  showDescription.value.push(false);
+}
 </script>
 
 <template>
@@ -35,4 +40,38 @@ const toggleAccordion = (index) => {
       </div>
     </div>
   </div>
+
+  <!-- <div class="text-lg font-semibold">
+    <div v-for="(question, index) in questions" :key="question"
+      :class="[index === questions.length - 1 ? 'border-b' : '']" class="border-t border-myGray-500/80 py-6 px-6">
+      <div class="flex items-center justify-between ">
+        <div class="flex items-center gap-x-10">
+          <div><span v-if="index < 9">0</span>{{ index + 1 }}</div>
+          <div>{{ question.question }}</div>
+        </div>
+        <div class="cursor-pointer transition-all duration-[0.3s]"
+          @click="showDescription[index] = !showDescription[index]" :class="{ 'rotate-90': showDescription[index] }">
+          <ArrowUp class="w-6" />
+        </div>
+      </div>
+      <div class="text-myGray-200 text-sm font-normal leading-6"
+        :class="['description', { show: showDescription[index] }]">
+        {{ question.answer }}
+      </div>
+    </div>
+  </div> -->
 </template> 
+
+<style scoped>
+.description {
+  height: 0;
+  margin-top: 0px;
+  overflow: hidden;
+  transition: height, margin-top 0.3s ease;
+}
+
+.description.show {
+  height: fit-content;
+  margin-top: 16px;
+}
+</style>

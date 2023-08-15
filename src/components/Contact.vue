@@ -3,14 +3,14 @@ import ArrowUp from "./icons/ArrowUp.vue";
 import FAQSection from "./FAQSection.vue";
 </script>
 <template>
-  <section class="xl:max-w-[1024px] mx-auto my-24">
+  <section class="xl:max-w-[1024px] mx-auto mb-24">
     <h2 class="text-3xl font-bold mb-8">
       <span>Contact </span>
       <span class="text-myGray-500 italic">Me</span>
     </h2>
     <div class="rounded-3xl ">
       <div class="grid grid-cols-7 gap-x-10 ">
-        <form action="#" method="post" class="flex flex-col gap-y-2.5 col-span-4">
+        <form action="#" method="post" class="flex flex-col gap-y-2.5 col-span-7">
           <div class="mb-3">
             <p class="leading-8 text-base text-myDark-400">I would love to hear from <span
                 class="italic font-semibold">you!</span>
@@ -43,7 +43,7 @@ import FAQSection from "./FAQSection.vue";
         </form>
 
         <div class="col-span-3">
-          <FAQSection />
+          <!-- <FAQSection /> -->
         </div>
       </div>
     </div>

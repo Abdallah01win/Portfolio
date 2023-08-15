@@ -38,11 +38,17 @@ for (let i = 0; i < services.length; i++) {
         <div class="grid grid-cols-2 gap-x-8">
             <div>
                 <p class="leading-8 text-base text-myDark-400 mb-2">In today's fast-paced digital landscape, a captivating
-                    online presence is paramount. I craft exceptional web solutions that don't just meet your needs but
-                    exceed your expectations. With
-                    a keen understanding of the challenges you face, I offer a suite of services designed to address your
-                    needs and deliver results that matter. Harness the power of cutting-edge technology, seamless user
-                    experiences, and eye-catching design to make your mark in the online world.</p>
+                    online presence is <span class="italic font-semibold">paramount.</span> I craft exceptional web
+                    solutions that don't just meet your needs but
+                    <span class="italic font-semibold">exceed your expectations.</span>
+                </p>
+                <p class="leading-8 text-base text-myDark-400 mb-2">With
+                    a keen understanding of the <span class="italic font-semibold">challenges</span> you face, I offer a
+                    suite of services designed to address your
+                    needs and deliver <span class="italic font-semibold">results that matter.</span> Harness the power of
+                    cutting-edge technology, seamless user
+                    experiences, and eye-catching design to make <span class="italic font-semibold">your mark</span> in the
+                    online world.</p>
 
                 <!-- <RouterLink to="about"
                     class="w-fit rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
@@ -62,13 +68,14 @@ for (let i = 0; i < services.length; i++) {
                             <div><span v-if="index < 9">0</span>{{ index + 1 }}</div>
                             <div>{{ service.title }}</div>
                         </div>
-                        <div class="cursor-pointer" @click="showDescription[index] = !showDescription[index]"
-                            :class="['transition-all duration-[0.3s]', { 'rotate-90': showDescription[index] }]">
+                        <div class="cursor-pointer transition-all duration-[0.3s]"
+                            @click="showDescription[index] = !showDescription[index]"
+                            :class="{ 'rotate-90': showDescription[index] }">
                             <ArrowUp class="w-6" />
                         </div>
                     </div>
                     <div class="text-myGray-200 text-sm font-normal leading-6"
-                        :class="['navigation', { show: showDescription[index] }]">
+                        :class="['description', { show: showDescription[index] }]">
                         {{ service.description }}
                     </div>
                 </div>
@@ -78,15 +85,14 @@ for (let i = 0; i < services.length; i++) {
 </template>
 
 <style scoped>
-.navigation {
+.description {
     height: 0;
     margin-top: 0px;
     overflow: hidden;
     transition: height, margin-top 0.3s ease;
 }
 
-.navigation.show {
+.description.show {
     height: fit-content;
     margin-top: 16px;
-}
-</style>
+}</style>
