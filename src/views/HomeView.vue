@@ -6,6 +6,7 @@ import TechStack from '../components/TechStack.vue';
 import Services from '../components/Services.vue';
 import Contact from '../components/Contact.vue';
 import TextRow from '../components/TextRow.vue';
+import Testemonials from '../components/Testemonials.vue';
 </script>
 
 <template>
@@ -13,9 +14,10 @@ import TextRow from '../components/TextRow.vue';
     <Hero />
     <Projects />
     <AboutMe />
+    <Testemonials />
     <Services />
-    <!-- <TechStack /> -->
     <TextRow />
     <Contact />
+    <!-- <TechStack /> -->
   </main>
 </template>
