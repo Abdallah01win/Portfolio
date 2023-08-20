@@ -10,7 +10,7 @@ const options = {
     type: 'loop',
     perPage: 2,
     focus: 1,
-    gap: '2.3rem',
+    gap: '2rem',
 }
 
 const customArrows = ref(null)
@@ -108,8 +108,9 @@ const testamonials = [
                     </div>
                 </SplideSlide>
             </Splide>
-            <div class="">
-                <div ref="customArrows" class="bolck flex items-center gap-2 bg-red-600 h-4 relative mt-5"></div>
+            <div class="flex items-center justify-center">
+                <div ref="customArrows" class="w-fit flex items-center gap-2 bg-myGray-600 rounded-full h-5 mt-8">
+                </div>
             </div>
         </div>
     </section>
@@ -117,11 +118,27 @@ const testamonials = [
 
 <style>
 .splide__arrow {
-    padding: 8px;
+    padding: 0px;
+    margin: 0px 8px;
+    background: transparent;
+    height: 0.7rem;
+    width: 0.7rem;
+    position: static;
+    transform: translateY(0%);
 }
 
 .splide__pagination {
-    bottom: 0;
-    margin: 0px 10px;
+    position: static;
+}
+
+.splide__pagination__page {
+    background: #C2C8C1;
+    height: 6px;
+    width: 6px;
+}
+
+.splide__pagination__page.is-active {
+    background: #000;
+    transform: scale(1);
 }
 </style>
