@@ -1,36 +1,53 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
+import TwitterLogo from "./icons/TwitterLogo.vue";
+import LinkedinLogo from "./icons/LinkedinLogo.vue";
+import GithubLogo from "./icons/GithubLogo.vue";
 
 const options = {
     type: 'loop',
     perPage: 2,
     focus: 1,
     gap: '2.3rem',
-    pagination: false,
 }
+
+const customArrows = ref(null)
+const splide = ref(null)
+
+onMounted(() => {
+    const splideElement = splide.value.$el;
+    if (splideElement) {
+        const pagination = splideElement.querySelector(".splide__pagination");
+        const prevArrow = splideElement.querySelector(".splide__arrow--prev");
+        const nextArrow = splideElement.querySelector(".splide__arrow--next");
+
+        customArrows.value.appendChild(prevArrow);
+        customArrows.value.appendChild(pagination);
+        customArrows.value.appendChild(nextArrow);
+    }
+})
 
 const testamonials = [
     {
         name: 'Hicham Abazine',
         title: 'Backend & Mobile Developer',
-        Image: 'https://dummyimage.com/106x106',
+        Image: '../src/assets/images/avatars/HichamAbazine.jpeg',
         links: {
-            twitter: 'https://twitter.com/AbdallahDev01',
-            linkedin: 'https://www.linkedin.com/in/abdallahbari/',
+            linkedin: 'https://www.linkedin.com/in/hichamabazine/',
             github: 'https://github.com/Abdallah01win',
         },
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus?',
 
     },
     {
-        name: 'Hicham Terban',
+        name: 'Hicham Terben',
         title: 'Graphic Designer',
         Image: 'https://dummyimage.com/106x106',
         links: {
-            twitter: 'https://twitter.com/AbdallahDev01',
-            linkedin: 'https://www.linkedin.com/in/abdallahbari/',
-            github: 'https://github.com/Abdallah01win',
+            twitter: 'https://twitter.com/hixham_t?s=20',
+            linkedin: 'https://www.linkedin.com/in/hicham-terben',
         },
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus?',
 
@@ -49,6 +66,7 @@ const testamonials = [
     },
 ]
 </script>
+
 <template>
     <section class="xl:max-w-[1024px] mx-auto mb-24" id="testemonials">
         <h2 class="text-3xl font-bold mb-8">
@@ -66,26 +84,44 @@ const testamonials = [
                             <div class="inline-flex items-center">
                                 <img alt="testimonial" :src="item.Image"
                                     class="w-10 h-10 rounded-full flex-shrink-0 object-cover object-center" />
-                                <span class="flex-grow flex flex-col pl-4">
-                                    <span class="title-font font-medium text-sm text-gray-900">{{ item.name }}</span>
-                                    <span class="text-xs">{{ item.title }}</span>
+                                <span class="flex-grow flex flex-col pl-4 gap-y-0.5">
+                                    <span class="title-font font-medium text-sm">{{ item.name }}</span>
+                                    <span class="text-xs text-myGray-500">{{ item.title }}</span>
                                 </span>
                             </div>
-                            <div class="flex items-center gap-x-2">
+                            <div class="flex items-center gap-x-3">
                                 <div v-for="link in item.links" :key="link">
-                                    <a :href="link" target="_blank">Link</a>
+                                    <a :href="link" target="_blank">
+                                        <span v-if="link.includes('github')">
+                                            <GithubLogo class="w-5 fill-myDark-100" />
+                                        </span>
+                                        <span v-if="link.includes('twitter')">
+                                            <TwitterLogo class="w-5 fill-myDark-100" />
+                                        </span>
+                                        <span v-if="link.includes('linkedin')">
+                                            <LinkedinLogo class="w-5 fill-myDark-100" />
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </SplideSlide>
             </Splide>
+            <div class="">
+                <div ref="customArrows" class="bolck flex items-center gap-2 bg-red-600 h-4 relative mt-5"></div>
+            </div>
         </div>
     </section>
 </template>
 
 <style>
-#testemonials .splide__arrow {
+.splide__arrow {
     padding: 8px;
+}
+
+.splide__pagination {
+    bottom: 0;
+    margin: 0px 10px;
 }
 </style>
