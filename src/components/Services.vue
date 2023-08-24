@@ -37,12 +37,7 @@ for (let i = 0; i < services.length; i++) {
 
         <div class="grid grid-cols-2 gap-x-8">
             <div>
-                <p class="leading-8 text-base text-myDark-400 mb-2">In today's fast-paced digital landscape, a captivating
-                    online presence is <span class="italic font-semibold">paramount.</span> I craft exceptional web
-                    solutions that don't just meet your needs but
-                    <span class="italic font-semibold">exceed your expectations.</span>
-                </p>
-                <p class="leading-8 text-base text-myDark-400 mb-2">With
+                <p class="leading-8 text-base text-myDark-400">With
                     a keen understanding of the <span class="italic font-semibold">challenges</span> you face, I offer a
                     suite of services designed to address your
                     needs and deliver <span class="italic font-semibold">results that matter.</span> Harness the power of
@@ -95,4 +90,5 @@ for (let i = 0; i < services.length; i++) {
 .description.show {
     height: fit-content;
     margin-top: 16px;
-}</style>
+}
+</style>

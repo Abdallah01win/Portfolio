@@ -1,45 +1,23 @@
-<script>
+<script setup>
 import ArrowUp from './icons/ArrowUp.vue';
 import ArrowDown from './icons/ArrowDown.vue';
 import GithubLogo from './icons/GithubLogo.vue';
 import LinkedInLogo from './icons/LinkedInLogo.vue';
 import TwitterLogo from './icons/TwitterLogo.vue';
-import { ref, onMounted } from 'vue';
-
-export default {
-    components: {
-        ArrowUp,
-        ArrowDown,
-        GithubLogo,
-        LinkedInLogo,
-        TwitterLogo,
-    },
-    setup() {
-
-        const circleTextRef = ref(null);
-        onMounted(() => {
-            if (circleTextRef.value) {
-                circleTextRef.value.innerHTML = circleTextRef.value.innerText
-                    .split("")
-                    .map((char, i) => `<span style="transform:rotate(${i * 8.3}deg); transform-origin:0px 100px;" class="absolute left-[50%]">${char}</span>`)
-                    .join("");
-            }
-        });
-        return {
-            circleTextRef,
-        };
-    }
-}
-
 </script>
+
 <template>
-    <main class="/hero xl:max-w-[1024px] mx-auto py-24 relative">
-        <div>
-            <div class="text-7xl font-bold">
+    <main class=" xl:max-w-[1024px] mx-auto pt-24 pb-12 relative">
+        <div class="flex flex-col items-center justify-center">
+            <div class="text-7xl font-bold text-center">
                 Design. Development. <span class="text-myGray-500 italic">Mastership</span>
             </div>
-            <p class="xl:max-w-[60%] my-12 leading-8 text-base">
-                I <span class="italic capitalize font-semibold">design</span>, <span class="italic capitalize font-semibold">develop</span>, and <span class="italic capitalize font-semibold">maintain</span> high-quality software systems and applications that make life easier and, hopefully, the world <span class="italic capitalize font-semibold">a better place</span>.
+            <p class="xl:max-w-[60%] my-12 leading-8 text-base text-center">
+                I <span class="italic capitalize font-semibold">design</span>, <span
+                    class="italic capitalize font-semibold">develop</span>, and <span
+                    class="italic capitalize font-semibold">maintain</span> high-quality software systems and applications
+                that make life easier and, hopefully, the world <span class="italic capitalize font-semibold">a better
+                    place</span>.
             </p>
             <div class="flex items-center gap-x-4 font-normal">
                 <button class="rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
@@ -56,9 +34,9 @@ export default {
                 </button>
             </div>
         </div>
-        <div class="flex flex-col items-center gap-x-8 w-fit absolute bottom-0 right-0 py-24 h-full">
-            <div class="h-full border-r border-myGray-500 mb-4"></div>
-            <div class="flex flex-col items-center gap-y-4">
+        <div class="flex items-center gap-x-8 w-full py-20 h-full">
+            <div class="w-full border-t border-myGray-500 mr-4"></div>
+            <div class="flex items-center gap-x-4">
                 <div>
                     <a href="https://github.com/Abdallah01win" target="_blank">
                         <GithubLogo class="w-6 fill-myDark-100" />
@@ -75,22 +53,7 @@ export default {
                     </a>
                 </div>
             </div>
-            <div class="h-full border-r border-myGray-500 mt-4"></div>
+            <div class="w-full border-t border-myGray-500 mr-4"></div>
         </div>
     </main>
 </template>
-
-<style scoped>
-
-.hero {
-    background-color: hsla(151, 0%, 100%, 1);
-    background-image:
-        radial-gradient(at 91% 62%, hsla(339, 61%, 76%, 1) 0px, transparent 50%),
-        radial-gradient(at 27% 83%, hsla(194, 61%, 71%, 1) 0px, transparent 50%),
-        radial-gradient(at 98% 90%, hsla(3, 92%, 62%, 1) 0px, transparent 50%),
-        radial-gradient(at 75% 12%, hsla(247, 69%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 51% 79%, hsla(265, 90%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 65%, hsla(253, 64%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 77% 74%, hsla(264, 78%, 78%, 1) 0px, transparent 50%);
-}
-</style>

@@ -96,7 +96,7 @@ import PythonLogo from "./icons/PythonLogo.vue";
           <span class="text-myGray-500 italic">Me</span>
         </h2>
         <p class="leading-8 text-base text-myDark-400 mb-2">
-          Hi there, my name is <span class="italic font-semibold">Abdallah Bari</span>, or just Abdo if you like. I'm a
+          Hi there, my name is <span class="italic font-semibold">Abdallah Bari.</span> I'm a
           <span class="italic font-semibold">Self-thought</span> software engineer and full-stack web developer with an
           undying passion for learning and <span class="italic font-semibold">innovation</span>.
         </p>

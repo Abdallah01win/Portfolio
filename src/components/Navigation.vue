@@ -25,7 +25,7 @@ export default {
 </script>
 <template>
   <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] mx-auto">
-    <RouterLink to="/" class="font-bold text-lg">Abdallah</RouterLink>
+    <RouterLink to="/" class="font-bold text-xl">Abdallah<span class="text-myGray-500 italic">Bari</span></RouterLink>
 
     <div class="flex items-center /gap-x-4">
       <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 mr-4 flex items-center gap-x-1 font-normal">
