@@ -35,7 +35,7 @@ import TwitterLogo from './icons/TwitterLogo.vue';
             </div>
         </div>
         <div class="flex items-center gap-x-8 w-full py-20 h-full">
-            <div class="w-full border-t border-myGray-500 mr-4"></div>
+            <div class="w-full border-t border-myGray-500"></div>
             <div class="flex items-center gap-x-4">
                 <div>
                     <a href="https://github.com/Abdallah01win" target="_blank">
@@ -53,7 +53,7 @@ import TwitterLogo from './icons/TwitterLogo.vue';
                     </a>
                 </div>
             </div>
-            <div class="w-full border-t border-myGray-500 mr-4"></div>
+            <div class="w-full border-t border-myGray-500"></div>
         </div>
     </main>
 </template>

@@ -93,7 +93,7 @@ export default {
                 </div>
               </div>
               <div>
-                <p class="leading-7 font-normal">{{ item.discription }}</p>
+                <p class="leading-6 text-sm text-myDark-400">{{ item.discription }}</p>
               </div>
               <div class="flex items-center gap-x-3 mt-auto rounded-full ml-4 mb-4 w-fit bottom-0 left-0 absolute">
                 <div class="bg-myWhite rounded-full border border-myGray-500/80 text-xs px-4 py-1.5"

@@ -1,94 +1,52 @@
 <script setup>
-import { ref } from 'vue'
 import ArrowUp from './icons/ArrowUp.vue';
-import { RouterLink } from 'vue-router';
 
 const services = [
     {
         "title": "Custom Website Development",
-        "description": "Crafting tailor-made websites that align with your brand's identity and goals. We create user-friendly interfaces and responsive designs to ensure a seamless and captivating user experience."
+        "description": "We create user-friendly interfaces and responsive designs to ensure a seamless and captivating user experience."
     },
     {
         "title": "Responsive Web Design",
-        "description": "Ensure your website shines across all devices. Our responsive designs adapt flawlessly to various screen sizes, keeping your mobile-savvy audience engaged and connected."
+        "description": "Our responsive designs adapt flawlessly to various screen sizes, keeping your audience engaged."
     },
     {
         "title": "CMS Integration and Optimization",
-        "description": "Take control of your content effortlessly. Our CMS integration and optimization service provides user-friendly interfaces and ensures peak performance, enabling easy management of your digital narrative."
+        "description": "Our CMS integration and optimization service provides user-friendly interfaces and ensures peak performance."
     },
     {
         "title": "Website Maintenance and Support",
-        "description": "We keep your website in prime condition with comprehensive maintenance and support. Focus on your core activities while we handle technical aspects, ensuring your website remains secure and glitch-free."
+        "description": "We keep your website in prime condition so you can focus on your core activities while we handle technical aspects."
     }
 ]
-
-const showDescription = ref([])
-for (let i = 0; i < services.length; i++) {
-    showDescription.value.push(false);
-}
 </script>
 
 <template>
-    <section class="xl:max-w-[1024px] mx-auto my-12">
-        <h2 class="text-3xl font-bold mb-8">
-            <span>My </span>
-            <span class="text-myGray-500 italic">Solutions</span>
-        </h2>
+    <section class="xl:max-w-[1024px] mx-auto my-16">
+        <div class="flex flex-col items-center justify-center mb-10">
+            <h2 class="text-5xl w-[50%] text-center mb-5 leading-[1.2]">
+                Solutions Taylored To Your Needs
+            </h2>
+            <p class="text-gray-400 w-[55%] text-center leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, itaque? Lorem ipsum dolor sit amet.</p>
+        </div>
 
-        <div class="grid grid-cols-2 gap-x-8">
-            <div>
-                <p class="leading-8 text-base text-myDark-400">With
-                    a keen understanding of the <span class="italic font-semibold">challenges</span> you face, I offer a
-                    suite of services designed to address your
-                    needs and deliver <span class="italic font-semibold">results that matter.</span> Harness the power of
-                    cutting-edge technology, seamless user
-                    experiences, and eye-catching design to make <span class="italic font-semibold">your mark</span> in the
-                    online world.</p>
-
-                <!-- <RouterLink to="about"
-                    class="w-fit rounded-full py-2 px-10 bg-myDark-100 text-myWhite flex items-center gap-x-2">
-                    <span>Learn More</span>
-                    <span>
-                        <ArrowUp class="w-5" />
-                    </span>
-                </RouterLink> -->
-            </div>
-
+        <div class="grid grid-cols-1 gap-x-8">
             <div class="text-lg font-semibold">
-                <div v-for="(service, index) in services" :key="service"
-                    :class="[index === services.length - 1 ? 'border-b' : '']"
-                    class="border-t border-myGray-500/80 py-6 px-6">
-                    <div class="flex items-center justify-between ">
-                        <div class="flex items-center gap-x-10">
-                            <div><span v-if="index < 9">0</span>{{ index + 1 }}</div>
-                            <div>{{ service.title }}</div>
+                <div v-for="(service, index) in services" :key="service" class="border-b border-myGray-500/80 py-7">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-6 flex items-center gap-x-10">
+                            <div class="text-2xl font-normal">{{ service.title }}</div>
                         </div>
-                        <div class="cursor-pointer transition-all duration-[0.3s]"
-                            @click="showDescription[index] = !showDescription[index]"
-                            :class="{ 'rotate-90': showDescription[index] }">
-                            <ArrowUp class="w-6" />
+                        <div class="col-span-5 text-gray-400 text-sm font-normal leading-5">
+                            {{ service.description }}
                         </div>
-                    </div>
-                    <div class="text-myGray-200 text-sm font-normal leading-6"
-                        :class="['description', { show: showDescription[index] }]">
-                        {{ service.description }}
+                        <div class="col-span-1 flex items-center justify-end cursor-pointer transition-all duration-[0.3s]">
+                            <ArrowUp class="w-8" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </template>
-
-<style scoped>
-.description {
-    height: 0;
-    margin-top: 0px;
-    overflow: hidden;
-    transition: height, margin-top 0.3s ease;
-}
-
-.description.show {
-    height: fit-content;
-    margin-top: 16px;
-}
-</style>
