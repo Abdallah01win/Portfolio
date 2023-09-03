@@ -61,15 +61,12 @@ export default {
 };
 </script>
 <template>
-  <section class="xl:max-w-[1024px] mx-auto mb-24">
-    <h2 class="text-3xl font-bold mb-8">
-      <span>My </span>
-      <span class="text-myGray-500 italic">Projects</span>
-    </h2>
+  <section class="xl:max-w-[1024px] mx-auto py-24 border-b border-myGray-500/40">
 
+    <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">my projects</div>
     <div class="grid grid-cols-2 gap-8">
       <div v-for="(item, index) in items" :key="index">
-        <div class="bg-myGray-600 rounded-3xl h-72 relative border border-myGray-500/80 overflow-hidden">
+        <div class="bg-myGray-600 rounded-3xl h-72 relative border border-myGray-500/40 overflow-hidden">
 
           <!-- Exported image at 1300 * 720 -->
           <div

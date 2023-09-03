@@ -27,9 +27,15 @@ module.exports = {
           600: "#F7F7F7",
         },
         myWhite: "#FAFFFD",
+        newGray: {
+          100: "#F3F3F3",
+          200: "#BDBDBD",
+        },
       },
       fontFamily: {
         Inter: "Inter, sans",
+        primary: "Cabinet",
+        primaryBold: "CabinetBold",
       },
     },
   },

@@ -28,7 +28,7 @@ export default {
     <RouterLink to="/" class="font-bold text-xl">Abdallah<span class="text-myGray-500 italic">Bari</span></RouterLink>
 
     <div class="flex items-center /gap-x-4">
-      <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 mr-4 flex items-center gap-x-1 font-normal">
+      <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 mr-4 flex items-center gap-x-1 font-medium">
         <span>Get in-touch</span>
         <span>
           <ArrowUp class="w-5" />

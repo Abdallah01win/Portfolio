@@ -22,23 +22,23 @@ const services = [
 </script>
 
 <template>
-    <section class="xl:max-w-[1024px] mx-auto my-16">
-        <div class="flex flex-col items-center justify-center mb-10">
-            <h2 class="text-5xl w-[50%] text-center mb-5 leading-[1.2]">
-                Solutions Taylored To Your Needs
-            </h2>
-            <p class="text-gray-400 w-[55%] text-center leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Fugiat, itaque? Lorem ipsum dolor sit amet.</p>
+    <section class="xl:max-w-[1024px] mx-auto py-24">
+        <div class="mb-10">
+            <div class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-lg font-semibold mb-10">My Services</div>
+
+            <p class="w-[90%] font-primary text-3xl leading-10">My name is Abdallah Bari. I'm a Self-thought software
+                engineer and web developer with an undying passion for innovation. I utilize my experties in the digital
+                landscape to help businesses gain an edge over the competition.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-x-8">
-            <div class="text-lg font-semibold">
-                <div v-for="(service, index) in services" :key="service" class="border-b border-myGray-500/80 py-7">
+            <div class="text-lg">
+                <div v-for="(service, index) in services" :key="service" class="border-b border-myGray-500/40 py-7">
                     <div class="grid grid-cols-12">
                         <div class="col-span-6 flex items-center gap-x-10">
-                            <div class="text-2xl font-normal">{{ service.title }}</div>
+                            <div class="text-3xl font-primaryBold">{{ service.title }}</div>
                         </div>
-                        <div class="col-span-5 text-gray-400 text-sm font-normal leading-5">
+                        <div class="col-span-5 text-myGray-400 text-base leading-5">
                             {{ service.description }}
                         </div>
                         <div class="col-span-1 flex items-center justify-end cursor-pointer transition-all duration-[0.3s]">

@@ -1,33 +1,15 @@
 <script setup>
-import { ref, onMounted } from 'vue'
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
 import TwitterLogo from "./icons/TwitterLogo.vue";
-import LinkedinLogo from "./icons/LinkedinLogo.vue";
 import GithubLogo from "./icons/GithubLogo.vue";
 
 const options = {
     type: 'loop',
-    perPage: 2,
+    perPage: 1,
     focus: 1,
-    gap: '2rem',
+    pagination: false
 }
-
-const customArrows = ref(null)
-const splide = ref(null)
-
-onMounted(() => {
-    const splideElement = splide.value.$el;
-    if (splideElement) {
-        const pagination = splideElement.querySelector(".splide__pagination");
-        const prevArrow = splideElement.querySelector(".splide__arrow--prev");
-        const nextArrow = splideElement.querySelector(".splide__arrow--next");
-
-        customArrows.value.appendChild(prevArrow);
-        customArrows.value.appendChild(pagination);
-        customArrows.value.appendChild(nextArrow);
-    }
-})
 
 const testamonials = [
     {
@@ -68,77 +50,49 @@ const testamonials = [
 </script>
 
 <template>
-    <section class="xl:max-w-[1024px] mx-auto mb-24" id="testemonials">
-        <h2 class="text-3xl font-bold mb-8">
-            <span>Client's </span>
-            <span class="text-myGray-500 italic">Testimonials</span>
-        </h2>
-        <div>
-            <Splide ref="splide" :options="options" aria-label="testamonials">
+    <section class="xl:max-w-[1024px] mx-auto py-24" id="testemonials">
+        <div class="mb-10">
+            <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">
+                testimonials</div>
+
+            <p class="w-[90%] font-primary text-3xl leading-10">My name is Abdallah Bari. I'm a Self-thought software
+                engineer and web developer with an undying passion for innovation. I utilize my experties in.</p>
+        </div>
+        <div class=" border border-myGray-500/40 rounded-3xl">
+            <Splide :options="options" aria-label="testamonials">
                 <SplideSlide v-for="(item, index) in  testamonials" :key="index">
-                    <div class="flex flex-col justify-between h-72 p-8 rounded-3xl border border-myGray-500/80">
-                        <p class="leading-6 text-sm text-myDark-400">
-                            {{ item.text }}
+                    <div class="flex flex-col items-center px-12 py-16">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-8 h-8 text-myDark-100 mb-9" viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="text-2xl font-primaryBold mb-3">"{{ item.title }}"</div>
+                        <p class="leading-8 text-lg font-medium text-center w-[80%] mx-auto mb-6">
+                            "{{ item.text }}"
                         </p>
-                        <div class="flex items-center justify-between">
-                            <div class="inline-flex items-center">
-                                <img alt="testimonial" :src="item.Image"
-                                    class="w-10 h-10 rounded-full flex-shrink-0 object-cover object-center" />
-                                <span class="flex-grow flex flex-col pl-4 gap-y-0.5">
-                                    <span class="title-font font-medium text-sm">{{ item.name }}</span>
-                                    <span class="text-xs text-myGray-500">{{ item.title }}</span>
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-x-3">
-                                <div v-for="link in item.links" :key="link">
-                                    <a :href="link" target="_blank">
-                                        <span v-if="link.includes('github')">
-                                            <GithubLogo class="w-5 fill-myDark-100" />
-                                        </span>
-                                        <span v-if="link.includes('twitter')">
-                                            <TwitterLogo class="w-5 fill-myDark-100" />
-                                        </span>
-                                        <span v-if="link.includes('linkedin')">
-                                            <LinkedinLogo class="w-5 fill-myDark-100" />
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="inline-flex items-center">
+                            <img alt="testimonial" :src="item.Image"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                            <span class="flex-grow flex flex-col pl-4 gap-y-0.5">
+                                <span class="font-semibold">{{ item.name }}</span>
+                                <span class="text-sm text-myGray-400">{{ item.title }}</span>
+                            </span>
                         </div>
                     </div>
                 </SplideSlide>
             </Splide>
-            <div class="flex items-center justify-center">
-                <div ref="customArrows" class="w-fit flex items-center gap-2 bg-myGray-600 rounded-full h-5 mt-8">
-                </div>
-            </div>
         </div>
     </section>
 </template>
 
 <style>
 .splide__arrow {
-    padding: 0px;
-    margin: 0px 8px;
     background: transparent;
-    height: 0.7rem;
-    width: 0.7rem;
-    position: static;
-    transform: translateY(0%);
-}
-
-.splide__pagination {
-    position: static;
-}
-
-.splide__pagination__page {
-    background: #C2C8C1;
-    height: 6px;
-    width: 6px;
-}
-
-.splide__pagination__page.is-active {
-    background: #000;
-    transform: scale(1);
+    border: 1px solid #0C0C0C;
+    padding: 8px;
 }
 </style>
