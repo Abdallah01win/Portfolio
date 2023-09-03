@@ -3,34 +3,35 @@ import ArrowUp from "./icons/ArrowUp.vue";
 import FAQSection from "./FAQSection.vue";
 </script>
 <template>
-  <section class="xl:max-w-[1024px] mx-auto my-24">
+  <section class="xl:max-w-[1024px] mx-auto mb-24">
     <h2 class="text-3xl font-bold mb-8">
       <span>Contact </span>
       <span class="text-myGray-500 italic">Me</span>
     </h2>
-    <div class="/bg-myGray-600 /py-10 /px-8 rounded-3xl ">
-      <div class="grid grid-cols-2 gap-x-12 ">
-        <form action="#" method="post" class="flex flex-col gap-y-2">
+    <div class="rounded-3xl ">
+      <div class="grid grid-cols-7 gap-x-10 ">
+        <form action="#" method="post" class="flex flex-col gap-y-2.5 col-span-7">
           <div class="mb-3">
-            <h2 class="text-xl font-bold mb-2">Ready to discuss your next project?</h2>
-            <p class="leading-6 text-myDark-400">I would love to hear from you! Get in touch and I'll respond
-              promptly.
+            <p class="leading-8 text-base text-myDark-400">I would love to hear from <span
+                class="italic font-semibold">you!</span>
               Let's
               embark on a
-              journey of creativity and innovation together!</p>
+              journey of <span class="italic font-semibold">creativity</span> and innovation <span
+                class="italic font-semibold">together!</span></p>
           </div>
-          <input type="text" name="name" id="name" placeholder="Your name"
-            class="bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
-          <input type="email" name="email" id="email" placeholder="Email Adress"
-            class="bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
-          <select name="intrest" id="intrest"
-            class="bg-transparent border-b border-myGray-500 py-2 focus:outline-none font-normal select">
-            <option value="" class="text-myGray-500">I'm intrested in</option>
-            <option value="full-stack">Full-Stack Web Application</option>
-            <option value="front">Front-End Web Application</option>
-            <option value="api">API Development</option>
-            <option value="other">Other</option>
-          </select>
+          <div class="flex items-center gap-x-6">
+
+            <input type="text" name="name" id="name" placeholder="Your name"
+              class="grow bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
+            <input type="email" name="email" id="email" placeholder="Email Adress"
+              class="grow bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
+          </div>
+          <div class="flex items-center gap-x-6">
+            <input type="text" name="intrest" id="intrest" placeholder="Intrested in"
+              class="grow bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
+            <input type="text" name="company" id="company" placeholder="Company"
+              class="grow bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
+          </div>
           <input type="text" name="description" placeholder="Message"
             class="bg-transparent border-b border-myGray-500 py-2 placeholder:text-myGray-500 placeholder:font-normal focus:outline-none" />
           <button class="rounded-full py-3 px-6 bg-myDark-100 text-myWhite gap-x-2 flex justify-center font-normal mt-6">
@@ -41,8 +42,8 @@ import FAQSection from "./FAQSection.vue";
           </button>
         </form>
 
-        <div class="">
-          <FAQSection />
+        <div class="col-span-3">
+          <!-- <FAQSection /> -->
         </div>
       </div>
     </div>

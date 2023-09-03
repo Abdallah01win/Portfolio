@@ -1,8 +1,7 @@
 <template>
   <section class="xl:max-w-[1024px] mx-auto mb-24">
-    <h1>This is an about page</h1>
 
-    <div>
+    <div class="leading-8 text-base text-myDark-400">
       Greetings! I'm Abdallah Bari, but you can call me Abdo. As a self-taught software engineer and full-stack web
       developer, I have traversed an exciting journey of continuous learning and boundless innovation. My insatiable
       curiosity drives me to explore new technologies and stay ahead of the rapidly evolving digital landscape.

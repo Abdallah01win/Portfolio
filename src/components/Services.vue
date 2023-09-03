@@ -1,52 +1,50 @@
 <script setup>
-import Puzzel from './icons/Puzzel.vue';
-import Code from './icons/Code.vue';
-import Settings from './icons/Settings.vue';
-</script>
-<template>
-    <section class="xl:max-w-[1024px] mx-auto my-12">
-        <h2 class="text-3xl font-bold mb-8">
-            <span>My </span>
-            <span class="text-myGray-500 italic">Services</span>
-        </h2>
-        <div class="bg-myGray-600 p-10 rounded-3xl">
-            <div class="flex items-center justify-between gap-x-6">
+import ArrowUp from './icons/ArrowUp.vue';
 
-                <div class="">
-                    <div class="flex items-center gap-x-3 mb-2">
-                        <span class="bg-myWhite rounded-full p-2 grid place-content-center">
-                            <Code class="w-5 fill-myDark-100" />
-                        </span>
-                        <h2 class="font-bold text-lg">Full SDLC</h2>
+const services = [
+    {
+        "title": "Custom Website Development",
+        "description": "We create user-friendly interfaces and responsive designs to ensure a seamless and captivating user experience."
+    },
+    {
+        "title": "Responsive Web Design",
+        "description": "Our responsive designs adapt flawlessly to various screen sizes, keeping your audience engaged."
+    },
+    {
+        "title": "CMS Integration and Optimization",
+        "description": "Our CMS integration and optimization service provides user-friendly interfaces and ensures peak performance."
+    },
+    {
+        "title": "Website Maintenance and Support",
+        "description": "We keep your website in prime condition so you can focus on your core activities while we handle technical aspects."
+    }
+]
+</script>
+
+<template>
+    <section class="xl:max-w-[1024px] mx-auto py-24">
+        <div class="mb-10">
+            <div class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-lg font-semibold mb-10">My Services</div>
+
+            <p class="w-[90%] font-primary text-3xl leading-10">My name is Abdallah Bari. I'm a Self-thought software
+                engineer and web developer with an undying passion for innovation. I utilize my experties in the digital
+                landscape to help businesses gain an edge over the competition.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-x-8">
+            <div class="text-lg">
+                <div v-for="(service, index) in services" :key="service" class="border-b border-myGray-500/40 py-7">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-6 flex items-center gap-x-10">
+                            <div class="text-3xl font-primaryBold">{{ service.title }}</div>
+                        </div>
+                        <div class="col-span-5 text-myGray-400 text-base leading-5">
+                            {{ service.description }}
+                        </div>
+                        <div class="col-span-1 flex items-center justify-end cursor-pointer transition-all duration-[0.3s]">
+                            <ArrowUp class="w-8" />
+                        </div>
                     </div>
-                    <p class="leading-6 font-normal">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores repellat totam ea
-                        consequuntur obcaecati impedit dolorem vitae at nostrum
-                    </p>
-                </div>
-                <div class="">
-                    <div class="flex items-center gap-x-3 mb-2">
-                        <span class="bg-myWhite rounded-full p-2 grid place-content-center">
-                            <Settings class="w-5 fill-myDark-100" />
-                        </span>
-                        <h2 class="font-bold text-lg">Maintainance</h2>
-                    </div>
-                    <p class="leading-6 font-normal">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores repellat totam ea
-                        consequuntur obcaecati impedit dolorem vitae at nostrum
-                    </p>
-                </div>
-                <div class="">
-                    <div class="flex items-center gap-x-3 mb-2">
-                        <span class="bg-myWhite rounded-full p-2 grid place-content-center">
-                            <Puzzel class="w-5 fill-myDark-100" />
-                        </span>
-                        <h2 class="font-bold text-lg">Feature Development</h2>
-                    </div>
-                    <p class="leading-6 font-normal">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores repellat totam ea
-                        consequuntur obcaecati impedit dolorem vitae at nostrum
-                    </p>
                 </div>
             </div>
         </div>
