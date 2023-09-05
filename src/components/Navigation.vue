@@ -24,38 +24,40 @@ export default {
 };
 </script>
 <template>
-  <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] mx-auto">
-    <RouterLink to="/" class="font-bold text-xl">Abdallah<span class="text-myGray-500 italic">Bari</span></RouterLink>
+  <section class="bg-myDark-100 text-white">
+    <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] mx-auto">
+      <RouterLink to="/" class="font-bold text-xl">Abdallah<span class="text-myGray-500 italic">Bari</span></RouterLink>
 
-    <div class="flex items-center /gap-x-4">
-      <button class="bg-myDark-100 text-myWhite rounded-full py-2 px-8 mr-4 flex items-center gap-x-1 font-medium">
-        <span>Get in-touch</span>
-        <span>
-          <ArrowUp class="w-5" />
-        </span>
-      </button>
+      <div class="flex items-center /gap-x-4">
+        <button class="bg-white text-myDark-100 rounded-full py-2 px-8 mr-4 flex items-center gap-x-1 font-semibold">
+          <span>Get in-touch</span>
+          <span>
+            <ArrowUp class="w-5 fill-white" />
+          </span>
+        </button>
 
-      <div class="flex items-center gap-x-2 border border-myDark-100 rounded-full py-2 px-3 cursor-pointer font-normal">
-        <Glob class="w-5" />
-        <span>En</span>
+        <div class="flex items-center gap-x-2 border border-white rounded-full py-2 px-3 cursor-pointer font-normal">
+          <Glob class="w-5 fill-white" />
+          <span>En</span>
+        </div>
+
+        <hr class="hr /rotate-90 h-8 w-[1px] bg-myGray-500 mx-4" />
+        <div :class="['navigation', { show: isNavOpen }]">
+          <ul class="flex items-center gap-x-8 nav-links">
+            <RouterLink to="/about">About</RouterLink>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="grid place-content-center p-2 border border-white rounded-full cursor-pointer toggle-button"
+          @click="toggelMenu()">
+          <X v-if="isNavOpen" class="w-5 fill-white" />
+          <List v-else class="w-5 fill-white" />
+        </div>
       </div>
-
-      <hr class="hr /rotate-90 h-8 w-[1px] bg-myGray-500 mx-4" />
-      <div :class="['navigation', { show: isNavOpen }]">
-        <ul class="flex items-center gap-x-8 nav-links">
-          <RouterLink to="/about">About</RouterLink>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-
-      <div class="grid place-content-center p-2 border border-myDark-100 rounded-full cursor-pointer toggle-button"
-        @click="toggelMenu()">
-        <X v-if="isNavOpen" class="w-5" />
-        <List v-else class="w-5" />
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </section>
 </template>
 
 <style scoped>
