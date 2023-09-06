@@ -13,7 +13,7 @@ import PythonLogo from "./icons/PythonLogo.vue";
 </script>
 <template>
   <section class="xl:max-w-[1024px] mx-auto py-24 border-b border-myGray-500/40">
-    <div class="grid grid-cols-[.45fr,1fr] ">
+    <div class="grid grid-cols-[.6fr,1fr] ">
       <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">about me</div>
       <div>
         <p class="font-primary text-5xl font-medium leading-[56px] mb-8">We have put together a special combination of

@@ -23,7 +23,7 @@ setInterval(function () {
 
 <template>
     <section class="bg-myDark-100 text-white mesh">
-        <div class="texture">
+        <div>
             <div class="xl:max-w-[1024px] mx-auto py-16 relative">
                 <div>
                     <div class="font-primaryBold ">
@@ -100,9 +100,11 @@ setInterval(function () {
 }
 
 .mesh {
-    background-image: radial-gradient(at 10% 97%, hsla(240, 85%, 69%, 1) 0, hsla(240, 85%, 69%, 0) 50%),
+    background-image: url('../assets/images/Texture.png'), radial-gradient(at 10% 97%, hsla(240, 85%, 69%, 1) 0, hsla(240, 85%, 69%, 0) 50%),
         radial-gradient(at 51% 95%, hsla(192, 91%, 57%, 1) 0, hsla(192, 91%, 57%, 0) 50%),
         radial-gradient(at 52% 49%, hsla(271, 89%, 65%, 1) 0, hsla(271, 89%, 65%, 0) 50%);
+    /* rest of your CSS properties... */
+
 
 
 
@@ -113,12 +115,5 @@ setInterval(function () {
     /* background-image: radial-gradient(at 9% 48%, hsla(259, 88%, 58%, 1) 0, hsla(259, 88%, 58%, 0) 50%),
         radial-gradient(at 28% 66%, hsla(238, 95%, 65%, 1) 0, hsla(238, 95%, 65%, 0) 50%),
         radial-gradient(at 35% 0%, hsla(220, 92%, 52%, 1) 0, hsla(220, 92%, 52%, 0) 50%); */
-}
-
-.texture {
-    background: url('../assets/images/Texture.png'), lightgray 0% 0% / 60.90909242630005px 60.90909242630005px repeat;
-    mix-blend-mode: overlay;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 </style>
