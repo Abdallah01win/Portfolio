@@ -1,8 +1,8 @@
 <script>
-import ArrowUp from "./icons/ArrowUp.vue";
-import Glob from "./icons/Glob.vue";
-import List from "./icons/List.vue";
-import X from "./icons/X.vue"
+import ArrowUp from "@/components/icons/ArrowUp.vue";
+import Glob from "@/components/icons/Glob.vue";
+import List from "@/components/icons/List.vue";
+import X from "@/components/icons/X.vue"
 import { ref, onMounted } from "vue";
 export default {
   components: {
@@ -24,7 +24,7 @@ export default {
 };
 </script>
 <template>
-  <section class="bg-myDark-100 text-white">
+  <section class="text-white">
     <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto">
       <RouterLink to="/" class="font-bold text-xl">Abdallah<span class="text-myGray-500 italic">Bari</span></RouterLink>
 

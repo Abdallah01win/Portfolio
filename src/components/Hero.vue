@@ -1,9 +1,8 @@
 <script setup>
-import ArrowUp from './icons/ArrowUp.vue';
-import ArrowDown from './icons/ArrowDown.vue';
-import GithubLogo from './icons/GithubLogo.vue';
-import LinkedInLogo from './icons/LinkedInLogo.vue';
-import TwitterLogo from './icons/TwitterLogo.vue';
+import Navigation from "@/components/Navigation.vue";
+import GithubLogo from "@/components/icons/GithubLogo.vue";
+import LinkedInLogo from "@/components/icons/LinkedInLogo.vue";
+import TwitterLogo from "@/components/icons/TwitterLogo.vue";
 
 setInterval(function () {
     const show = document.querySelector('.mask span[data-show]')
@@ -23,6 +22,7 @@ setInterval(function () {
 
 <template>
     <section class="bg-myDark-100 text-white mesh">
+        <Navigation />
         <div>
             <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-16 relative">
                 <div>

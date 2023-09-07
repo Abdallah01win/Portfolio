@@ -1,5 +1,5 @@
 <script setup>
-import ArrowUp from './icons/ArrowUp.vue';
+import ArrowUp from "@/components/icons/ArrowUp.vue";
 
 const services = [
     {
@@ -22,7 +22,7 @@ const services = [
 </script>
 
 <template>
-    <section class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24">
+    <section class="xl:max-w-[1024px] 2xl:max-w-[1280px]  mx-auto py-24">
         <div class="mb-10">
             <div class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-lg font-semibold mb-10">My Services</div>
 

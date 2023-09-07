@@ -1,5 +1,5 @@
 <script setup>
-import ArrowUp from "./icons/ArrowUp.vue";
+import ArrowUp from "@/components/icons/ArrowUp.vue";
 import FAQSection from "./FAQSection.vue";
 </script>
 <template>

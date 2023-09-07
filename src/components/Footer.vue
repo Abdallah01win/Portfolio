@@ -1,8 +1,8 @@
 <script setup>
-import GithubLogo from './icons/GithubLogo.vue';
-import Glob from './icons/Glob.vue';
-import LinkedInLogo from './icons/LinkedInLogo.vue';
-import TwitterLogo from './icons/TwitterLogo.vue';
+import GithubLogo from "@/components/icons/GithubLogo.vue";
+import Glob from "@/components/icons/Glob.vue";
+import LinkedInLogo from "@/components/icons/LinkedInLogo.vue";
+import TwitterLogo from "@/components/icons/TwitterLogo.vue";
 </script>
 <template>
     <section class="bg-myDark-100 pt-24">

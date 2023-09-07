@@ -1,14 +1,14 @@
 <script setup>
-import Hero from '../components/Hero.vue';
-import AboutMe from '../components/AboutMe.vue';
-import Services from '../components/Services.vue';
-import ExperianceSection from '../components/ExperianceSection.vue';
+import Hero from "@/components/Hero.vue";
+import AboutMe from "@/components/AboutMe.vue";
+import Services from "@/components/Services.vue";
+import ExperianceSection from "@/components/ExperianceSection.vue";
+import Testemonials from "@/components/Testemonials.vue";
 
-import Projects from '../components/Projects.vue';
-import TechStack from '../components/TechStack.vue';
-import Contact from '../components/Contact.vue';
-import TextRow from '../components/TextRow.vue';
-import Testemonials from '../components/Testemonials.vue';
+import Projects from "@/components/Projects.vue";
+import TechStack from "@/components/TechStack.vue";
+import Contact from "@/components/Contact.vue";
+import TextRow from "@/components/TextRow.vue";
 </script>
 
 <template>
@@ -18,12 +18,10 @@ import Testemonials from '../components/Testemonials.vue';
     <Services />
     <ExperianceSection />
     <Testemonials />
-    <!-- <Projects /> -->
 
-    <!-- 
-    
+    <!-- <Projects />
     <TextRow />
-    <Contact /> -->
-    <!-- <TechStack /> -->
+    <Contact />
+    <TechStack /> -->
   </main>
 </template>

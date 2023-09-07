@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import ArrowUp from './icons/ArrowUp.vue';
+import ArrowUp from '@/components/icons/ArrowUp.vue';
 const questions = ref([
   { question: "Are you available for hire?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit dolorem reiciendis possimus ipsum sit rerum aspernatur provident dignissimos id?", isOpen: false },
   { question: "What technologies do you use?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit dolorem reiciendis possimus ipsum sit rerum aspernatur provident dignissimos id?", isOpen: false },
