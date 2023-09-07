@@ -7,7 +7,7 @@ import TwitterLogo from './icons/TwitterLogo.vue';
 <template>
     <section class="bg-myDark-100 pt-24">
 
-        <footer class="xl:max-w-[1024px] mx-auto text-white">
+        <footer class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto text-white">
             <div class="text-9xl font-primaryBold">AbdallahBari</div>
             <div class="flex items-center justify-between  border-t border-myGray-500/40 py-5 ">
                 <div class="">2023 &#169; By <span class="font-semibold">Abdallah Bari</span></div>

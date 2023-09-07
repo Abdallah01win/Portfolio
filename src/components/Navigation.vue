@@ -25,7 +25,7 @@ export default {
 </script>
 <template>
   <section class="bg-myDark-100 text-white">
-    <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] mx-auto">
+    <nav class="flex items-center justify-between py-4 xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto">
       <RouterLink to="/" class="font-bold text-xl">Abdallah<span class="text-myGray-500 italic">Bari</span></RouterLink>
 
       <div class="flex items-center /gap-x-4">

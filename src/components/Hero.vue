@@ -24,7 +24,7 @@ setInterval(function () {
 <template>
     <section class="bg-myDark-100 text-white mesh">
         <div>
-            <div class="xl:max-w-[1024px] mx-auto py-16 relative">
+            <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-16 relative">
                 <div>
                     <div class="font-primaryBold ">
                         <div class="text-[10rem] h-[165px] flex items-center">Keep</div>

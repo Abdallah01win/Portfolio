@@ -4,7 +4,7 @@ import ArrowUp from './icons/ArrowUp.vue';
 
 <template>
     <section class="bg-myDark-100">
-        <div class="max-w-[1024px] mx-auto py-24 text-white">
+        <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24 text-white">
             <div class="border border-white py-2 px-6 w-fit rounded-full text-lg font-medium mb-10 capitalize">why choose me?
             </div>
             <div class="grid grid-cols-[1fr,.7fr]">

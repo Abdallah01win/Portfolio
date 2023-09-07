@@ -50,7 +50,7 @@ const testamonials = [
 </script>
 
 <template>
-    <section class="xl:max-w-[1024px] mx-auto py-24" id="testemonials">
+    <section class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24" id="testemonials">
         <div class="mb-10">
             <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">
                 testimonials</div>
