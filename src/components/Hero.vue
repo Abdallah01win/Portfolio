@@ -21,7 +21,7 @@ setInterval(function () {
 </script>
 
 <template>
-    <section class="bg-myDark-100 text-white mesh">
+    <section class="bg-myDark-100 text-white mesh h-screen">
         <Navigation />
         <div>
             <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-16 relative">
@@ -40,27 +40,6 @@ setInterval(function () {
                         engineer and web developer with an undying passion for innovation. I utilize my experties in the
                         digital
                         landscape to help businesses gain an edge over the competition.</p>
-                </div>
-                <div class="flex flex-col items-center gap-x-8 w-fit absolute bottom-0 right-0 py-16 h-full">
-                    <div class="h-full border-r border-myGray-500 mb-4"></div>
-                    <div class="flex flex-col items-center gap-y-4">
-                        <div>
-                            <a href="https://github.com/Abdallah01win" target="_blank">
-                                <GithubLogo class="w-6 fill-white" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://twitter.com/AbdallahDev01" target="_blank">
-                                <TwitterLogo class="w-6 fill-white" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/abdallahbari/" target="_blank">
-                                <LinkedInLogo class="w-6 fill-white" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="h-full border-r border-myGray-500 mt-4"></div>
                 </div>
             </div>
         </div>
@@ -100,10 +79,9 @@ setInterval(function () {
 }
 
 .mesh {
-    background-image: url('../assets/images/Texture.png'), radial-gradient(at 10% 97%, hsla(240, 85%, 69%, 1) 0, hsla(240, 85%, 69%, 0) 50%),
-        radial-gradient(at 51% 95%, hsla(192, 91%, 57%, 1) 0, hsla(192, 91%, 57%, 0) 50%),
-        radial-gradient(at 52% 49%, hsla(271, 89%, 65%, 1) 0, hsla(271, 89%, 65%, 0) 50%);
-    /* rest of your CSS properties... */
+    background-image: url('../assets/images/Texture.png'),
+        radial-gradient(at 41% 145%, rgb(97, 34, 214) 0, hsla(240, 85%, 69%, 0) 50%),
+        radial-gradient(at 130% 110%, rgb(59, 104, 230) 0, hsla(192, 91%, 57%, 0) 50%);
 
 
 
