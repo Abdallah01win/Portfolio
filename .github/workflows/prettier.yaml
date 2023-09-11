@@ -1,0 +1,21 @@
+name: prettier
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Prettier Checker
+        uses: actionsx/prettier@v3
+        with: 
+          args: --check --loglevel=warn .
