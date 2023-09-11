@@ -1,7 +1,7 @@
 name: prettier
 
 on:
-  push:
+  pull_request:
     branches:
       - master
       - dev
@@ -17,5 +17,5 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: Prettier Checker
         uses: actionsx/prettier@v3
-        with: 
-          args: --check --loglevel=warn .
+        with:
+          args: --check --log-level=warn .
