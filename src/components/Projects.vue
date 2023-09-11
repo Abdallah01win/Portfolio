@@ -1,8 +1,8 @@
 <script>
-import ArrowUp from "./icons/ArrowUp.vue";
+import ArrowUp from "@/components/icons/ArrowUp.vue";
 import { ref } from "vue";
-import X from "./icons/X.vue";
-import GithubLogo from "./icons/GithubLogo.vue";
+import X from "@/components/icons/X.vue";
+import GithubLogo from "@/components/icons/GithubLogo.vue";
 export default {
   components: {
     ArrowUp,

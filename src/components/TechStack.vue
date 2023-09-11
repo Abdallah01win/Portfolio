@@ -1,14 +1,14 @@
 <script>
-import Js from "./icons/Js.vue";
-import VueLogo from "./icons/VueLogo.vue";
-import LaravelLogo from "./icons/LaravelLogo.vue";
-import PythonLogo from "./icons/PythonLogo.vue";
-import HtmlLogo from "./icons/HtmlLogo.vue";
-import CssLogo from "./icons/CssLogo.vue";
-import SassLogo from "./icons/SassLogo.vue";
-import PhpLogo from "./icons/PhpLogo.vue";
-import CLogo from "./icons/CLogo.vue";
-import GitLogo from "./icons/GitLogo.vue";
+import Js from "@/components/icons/Js.vue";
+import VueLogo from "@/components/icons/VueLogo.vue";
+import LaravelLogo from "@/components/icons/LaravelLogo.vue";
+import PythonLogo from "@/components/icons/PythonLogo.vue";
+import HtmlLogo from "@/components/icons/HtmlLogo.vue";
+import CssLogo from "@/components/icons/CssLogo.vue";
+import SassLogo from "@/components/icons/SassLogo.vue";
+import PhpLogo from "@/components/icons/PhpLogo.vue";
+import CLogo from "@/components/icons/CLogo.vue";
+import GitLogo from "@/components/icons/GitLogo.vue";
 
 export default {
     components: {
