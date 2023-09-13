@@ -6,7 +6,6 @@ import ExperianceSection from "@/components/ExperianceSection.vue";
 import Testemonials from "@/components/Testemonials.vue";
 
 import Projects from "@/components/Projects.vue";
-import TechStack from "@/components/TechStack.vue";
 import Contact from "@/components/Contact.vue";
 import TextRow from "@/components/TextRow.vue";
 </script>
@@ -21,7 +20,6 @@ import TextRow from "@/components/TextRow.vue";
 
     <!-- <Projects />
     <TextRow />
-    <Contact />
-    <TechStack /> -->
+    <Contact /> -->
   </main>
 </template>
