@@ -63,7 +63,7 @@ const ringStyle = {
             </div>
         </div>
     </section>
-    <section class="h-[50vh]">
+    <section>
         <div class="text-ring">
             <div ref="ring" :style="ringStyle"></div>
         </div>
