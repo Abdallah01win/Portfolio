@@ -1,6 +1,36 @@
 <script setup>
 import Navigation from "@/components/Navigation.vue";
 import ArrowDown from "@/components/icons/ArrowDown.vue";
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    const RING = document.querySelector('.text-ring')
+
+    const OPTIONS = {
+        text: "Hi I’m Abdallah Bari • Let’s get started! ",
+        size: 1,
+        spacing: 1,
+    }
+
+    const onUpdate = () => {
+        RING.innerHTML = ''
+        const CHARS = OPTIONS.text.split('')
+        RING.style.setProperty('--total', CHARS.length)
+        RING.style.setProperty('--character-width', OPTIONS.spacing)
+        RING.style.setProperty('--font-size', OPTIONS.size)
+        const HIDDEN_CHARS = Object.assign(document.createElement('span'), {
+            ariaHidden: true,
+        })
+
+        for (let c = 0; c < CHARS.length; c++) {
+            HIDDEN_CHARS.innerHTML += `<span style="--index: ${c}">${CHARS[c]}</span>`
+        }
+        RING.appendChild(HIDDEN_CHARS)
+        RING.innerHTML += `<span class="sr-only">${OPTIONS.text}</span>`
+    }
+
+    onUpdate()
+})
 </script>
 
 <template>
@@ -20,9 +50,10 @@ import ArrowDown from "@/components/icons/ArrowDown.vue";
             </p>
 
             <div class="flex items-center justify-end">
-                <div class="cursor-pointer rounded-full grid place-content-center p-16 glass
+                <div class="cursor-pointer rounded-full relative grid place-content-center p-16 glass
                         hover:scale-[1.1] transition-all">
                     <ArrowDown class="w-12 fill-white" />
+                    <span class="text-ring font-semibold"></span>
                 </div>
             </div>
         </div>
@@ -42,5 +73,11 @@ import ArrowDown from "@/components/icons/ArrowDown.vue";
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.8px);
     -webkit-backdrop-filter: blur(4.8px);
+}
+
+@supports not (top: calc(sin(1) * 1px)) {
+    .text-ring {
+        display: none;
+    }
 }
 </style>
