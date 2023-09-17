@@ -1,0 +1,30 @@
+.text-ring [style*="--index"] {
+  /* In "ch" units */
+  --inner-angle: calc((360 / var(--total)) * 1deg);
+  --radius: calc((var(--character-width, 1) / sin(var(--inner-angle))) * -1ch);
+  text-transform: uppercase;
+  font-size: calc(var(--font-size, 2) * 1rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+    rotate(calc(var(--inner-angle) * var(--index)))
+    translateY(var(--radius, -5ch));
+}
+
+.dg :is(.cr.string, .cr.number) input[type="text"] {
+  color: white;
+  line-height: 1;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
