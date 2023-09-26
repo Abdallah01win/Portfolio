@@ -29,10 +29,10 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
                         business. Expect open and transparent communication throughout our partnership, ensuring that your
                         ideas are not just heard but also brilliantly executed.
                     </p>
-                    <p class="leading-8 text-lg font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Molestias
-                        porro earum qui rerum, distinctio
-                        dignissimos quisquam. Nihil explicabo iusto. Your success is my success, and I'm
+                    <p class="leading-8 text-lg font-medium">
+                        Because excellence lies in the details, I pay carful attention
+                        to all aspects of a sucessful business website that will set you ahead of the competition. Your
+                        success is my success, I and I'm
                         dedicated to make it happen.
                     </p>
                 </div>
@@ -43,13 +43,14 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
                     <div class="text-xl">Years of Experiance</div>
                 </div>
                 <div>
-                    <div class="text-7xl mb-3 font-medium">50+</div>
+                    <div class="text-7xl mb-3 font-medium">20+</div>
                     <div class="text-xl">Satisfied Clients</div>
                 </div>
                 <div>
-                    <div class="text-7xl mb-3 font-medium">70+</div>
+                    <div class="text-7xl mb-3 font-medium">35+</div>
                     <div class="text-xl">Completed Projects</div>
                 </div>
             </div>
         </div>
-</section></template>
+    </section>
+</template>
