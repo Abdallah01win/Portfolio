@@ -40,13 +40,14 @@ onMounted(() => {
         <div class="border border-myGray-400/10 p-80 rounded-full absolute left-[8%] bottom-[-50%]"></div>
         <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-28 pb-16">
             <div class="text-6xl font-primaryBold leading-[1.3] tracking-wide mb-10">
-                Your Digital Transformation Partner to Rise Above the Competition.
+                Your digital transformation partner for a captivating online presence.
+                <!-- Your Digital Transformation Partner to Rise Above the Competition. -->
+                <!-- Unlock the potential of your business with a captivating website. -->
             </div>
             <p class="leading-8 text-xl text-myGray-400 w-[70%]">
-                I am dedicated to being your
-                trusted digital transformation partner. Together, we'll navigate the ever-evolving digital
-                landscape,
-                implementing strategies that not only.
+                <!-- With years of experience in the industry, I specialize in transforming outdated websites into powerful
+                online assets that captivate your audience and drive results. -->
+                With years of experience in the industry, I specialize in giving small and medium-sized businesses the modern and professional websites they deserve. 
             </p>
 
             <div class="flex items-center justify-end">

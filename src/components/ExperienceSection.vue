@@ -31,7 +31,7 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
                     </p>
                     <p class="leading-8 text-lg font-medium">
                         Because excellence lies in the details, I pay carful attention
-                        to all aspects of a sucessful business website that will set you ahead of the competition. Your
+                        to all aspects of a successful business website that will set you ahead of the competition. Your
                         success is my success, I and I'm
                         dedicated to make it happen.
                     </p>
@@ -40,7 +40,7 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
             <div class="flex items-center justify-between mt-16">
                 <div>
                     <div class="text-7xl mb-3 font-medium">04+</div>
-                    <div class="text-xl">Years of Experiance</div>
+                    <div class="text-xl">Years of Experience</div>
                 </div>
                 <div>
                     <div class="text-7xl mb-3 font-medium">20+</div>

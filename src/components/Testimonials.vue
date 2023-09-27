@@ -10,7 +10,7 @@ const options = {
   pagination: false,
 };
 
-const testamonials = [
+const testimonials = [
   {
     name: "Hicham Abazine",
     title: "Backend & Mobile Developer",
@@ -48,7 +48,7 @@ const testamonials = [
 <template>
   <section
     class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24"
-    id="testemonials">
+    id="testimonials">
     <div class="mb-10">
       <div
         class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">
@@ -62,8 +62,8 @@ const testamonials = [
       </p>
     </div>
     <div class="border border-myGray-500/40 rounded-3xl">
-      <Splide :options="options" aria-label="testamonials">
-        <SplideSlide v-for="(item, index) in testamonials" :key="index">
+      <Splide :options="options" aria-label="testimonials">
+        <SplideSlide v-for="(item, index) in testimonials" :key="index">
           <div class="flex flex-col items-center px-12 py-16">
             <div>
               <Quote class="w-8 h-8 text-myGray-500/40 mb-9" />
