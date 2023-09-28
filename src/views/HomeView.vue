@@ -7,8 +7,6 @@ import Testimonials from "@/components/Testimonials.vue";
 import Contact from "@/components/Contact.vue";
 
 import Projects from "@/components/Projects.vue";
-import TechStack from "@/components/TechStack.vue";
-import TextRow from "@/components/TextRow.vue";
 </script>
 
 <template>
@@ -20,8 +18,6 @@ import TextRow from "@/components/TextRow.vue";
     <Testimonials />
     <Contact />
 
-    <!-- <Projects />
-    <TextRow />
-    <TechStack /> -->
+    <!-- <Projects /> -->
   </main>
 </template>
