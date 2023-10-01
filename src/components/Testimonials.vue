@@ -37,13 +37,13 @@ const testimonials = [
 </script>
 
 <template>
-  <section class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24" id="testimonials">
+  <section id="testimonials" class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24">
     <div class="mb-10">
       <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">
         testimonials
       </div>
 
-      <p class="w-[90%] font-primary text-5xl font-bold leading-[1.1] mb-10">
+      <p class="w-[90%] font-primary text-5xl font-bold leading-[1.1] tracking-wide mb-10">
         Hear it from countless satisfied clients who achieved remarkable results with the impact I've had on their online presence.  
       </p>
     </div>

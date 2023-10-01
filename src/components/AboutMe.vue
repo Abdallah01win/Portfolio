@@ -9,7 +9,7 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
         about me
       </div>
       <div>
-        <p class="font-primary text-5xl font-semibold leading-[1.1] mb-8">
+        <p class="font-primary text-5xl font-semibold leading-[1.1] tracking-wide mb-8">
           I turn websites into powerful online assets that maximize your digital potential.
         </p>
         <div>

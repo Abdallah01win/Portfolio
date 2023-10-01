@@ -26,7 +26,7 @@ const services = [
         <div class="mb-10">
             <div class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-lg font-semibold mb-10">My Services</div>
 
-            <p class="w-[90%] font-primary text-5xl font-bold leading-[1.1] mb-10">
+            <p class="w-[90%] font-primary text-5xl font-bold leading-[1.1] tracking-wide mb-10">
                 Here are my solutions to transform your website into a user-friendly platform that converts visitors into
                 loyal customers.
             </p>

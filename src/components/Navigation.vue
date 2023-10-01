@@ -9,16 +9,16 @@ import { RouterLink } from 'vue-router';
 
       <ul class="flex items-center gap-x-8 tracking-wide text-sm text-myGray-500">
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="#about">About</a>
         </li>
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">About</RouterLink>
+          <a href="#services">Services</a>
         </li>
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">Services</RouterLink>
+          <a href="#testimonials">Testimonials</a>
         </li>
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">Projects</RouterLink>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
 

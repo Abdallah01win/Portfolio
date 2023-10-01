@@ -39,15 +39,15 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
             </div>
             <div class="flex items-center justify-between mt-16">
                 <div>
-                    <div class="text-7xl mb-3 font-medium">04+</div>
+                    <div class="text-7xl mb-3 font-medium">05+</div>
                     <div class="text-xl">Years of Experience</div>
                 </div>
                 <div>
-                    <div class="text-7xl mb-3 font-medium">20+</div>
+                    <div class="text-7xl mb-3 font-medium">25+</div>
                     <div class="text-xl">Satisfied Clients</div>
                 </div>
                 <div>
-                    <div class="text-7xl mb-3 font-medium">35+</div>
+                    <div class="text-7xl mb-3 font-medium">40+</div>
                     <div class="text-xl">Completed Projects</div>
                 </div>
             </div>
