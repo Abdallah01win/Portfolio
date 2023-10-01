@@ -9,16 +9,15 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
         about me
       </div>
       <div>
-        <p class="font-primary text-5xl font-medium leading-[56px] mb-8">
-          We have put together a special combination of strategy, marketting,
-          design and digital experties.
+        <p class="font-primary text-5xl font-semibold leading-[1.1] tracking-wide mb-8">
+          I turn websites into powerful online assets that maximize your digital potential.
         </p>
         <div>
           <div class="leading-8 text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            soluta corrupti non labore corporis dolorum. Lorem ipsum dolor sit
-            amet consectetur, adipisicing elit. Perspiciatis, debitis? Lorem
-            ipsum dolor sit amet.
+            My name is Abdallah Bari, I'm a seasoned web developer dedicated to crafting exceptional online experiences.
+            With a rich background in web development spanning over 4 years, i've picked up a special combination of
+            strategy, design, and marketing that enables me to deliver, not only, flawlessly functioning, but also
+            esthetically pleasing websites with a lasting impression.
           </div>
         </div>
 
@@ -31,5 +30,4 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
         </button>
       </div>
     </div>
-  </section>
-</template>
+  </section></template>

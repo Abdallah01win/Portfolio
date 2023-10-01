@@ -15,7 +15,7 @@ export default {
       {
         title: "Passworld",
         tags: ['Vue', 'Tailwind', 'Vite'],
-        discription:
+        description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
         image: "src/assets/images/passworld.png",
         repo: "https://github.com/Abdallah01win/generated-passwords/tree/mine",
@@ -25,7 +25,7 @@ export default {
       {
         title: "Voyager",
         tags: ['Vue', 'Tailwind', 'Vite'],
-        discription:
+        description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
         image: "src/assets/images/passworld.png",
         repo: "",
@@ -34,7 +34,7 @@ export default {
       {
         title: "News Magazine Website",
         tags: ['Vue', 'Tailwind', 'Vite'],
-        discription:
+        description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
         image: "src/assets/images/passworld.png",
         repo: "",
@@ -43,7 +43,7 @@ export default {
       {
         title: "News Magazine Website",
         tags: ['Vue', 'Tailwind', 'Vite'],
-        discription:
+        description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem natus dolore repellendus quasi aliquid, molestias recusandae tempora odio excepturi, aut laboriosam distinctio nulla fuga.",
         image: "src/assets/images/passworld.png",
         repo: "",
@@ -90,7 +90,7 @@ export default {
                 </div>
               </div>
               <div>
-                <p class="leading-6 text-sm text-myDark-400">{{ item.discription }}</p>
+                <p class="leading-6 text-sm text-myDark-400">{{ item.description }}</p>
               </div>
               <div class="flex items-center gap-x-3 mt-auto rounded-full ml-4 mb-4 w-fit bottom-0 left-0 absolute">
                 <div class="bg-myWhite rounded-full border border-myGray-500/80 text-xs px-4 py-1.5"
