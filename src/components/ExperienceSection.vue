@@ -8,7 +8,7 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
             <div class="border border-white py-2 px-6 w-fit rounded-full text-lg font-medium mb-10 capitalize">why choose
                 me?
             </div>
-            <div class="grid grid-cols-[1fr,1fr]">
+            <div class="grid grid-cols-2">
                 <div>
                     <p class="w-[90%] font-primary text-5xl leading-[56px]">
                         I'm not here to push pre-made solutions onto your project.
