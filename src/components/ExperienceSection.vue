@@ -1,5 +1,7 @@
 <script setup>
 import ArrowUp from "@/components/icons/ArrowUp.vue";
+
+const address = import.meta.env.VITE_MAIL_TO_ADDRESS
 </script>
 
 <template>
@@ -14,13 +16,13 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
                         I'm not here to push pre-made solutions onto your project.
                     </p>
 
-                    <button
-                        class="bg-white text-myDark-100 text-lg mt-10 tracking-wide font-semibold rounded-full py-2 px-8 mr-4 flex items-center gap-x-4 ">
+                    <a :href="`https://mail.google.com/mail/?view=cm&fs=1&to=${address}`" target="_blank"
+                        class="bg-white text-myDark-100 text-lg mt-10 tracking-wide font-semibold rounded-full py-2 px-8 mr-4 flex items-center gap-x-4 w-fit">
                         <span>Let's work together!</span>
                         <span>
                             <ArrowUp class="w-6" />
                         </span>
-                    </button>
+                    </a>
                 </div>
 
                 <div>

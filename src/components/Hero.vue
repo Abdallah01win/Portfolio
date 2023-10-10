@@ -2,34 +2,10 @@
 import Navigation from "@/components/Navigation.vue";
 import ArrowDown from "@/components/icons/ArrowDown.vue";
 import { onMounted } from 'vue';
+import { circler_text } from '@/functions.js'
 
 onMounted(() => {
-    const RING = document.querySelector('.text-ring')
-
-    const OPTIONS = {
-        text: "Hi I’m Abdallah Bari • Let’s get started! ",
-        size: 1,
-        spacing: 1,
-    }
-
-    const onUpdate = () => {
-        RING.innerHTML = ''
-        const CHARS = OPTIONS.text.split('')
-        RING.style.setProperty('--total', CHARS.length)
-        RING.style.setProperty('--character-width', OPTIONS.spacing)
-        RING.style.setProperty('--font-size', OPTIONS.size)
-        const HIDDEN_CHARS = Object.assign(document.createElement('span'), {
-            ariaHidden: true,
-        })
-
-        for (let c = 0; c < CHARS.length; c++) {
-            HIDDEN_CHARS.innerHTML += `<span style="--index: ${c}">${CHARS[c]}</span>`
-        }
-        RING.appendChild(HIDDEN_CHARS)
-        RING.innerHTML += `<span class="sr-only">${OPTIONS.text}</span>`
-    }
-
-    onUpdate()
+    circler_text('hero-circle-text', "Hi I’m Abdallah Bari • Let’s get started! ")
 })
 </script>
 
@@ -42,17 +18,18 @@ onMounted(() => {
             <div class="text-6xl font-primaryBold leading-[1.3] tracking-wide mb-10">
                 Your digital transformation partner for a captivating online presence.
             </div>
+            
             <p class="leading-8 text-xl text-myGray-400 w-[70%]">
                 I specialize in giving small and medium-sized businesses the modern and professional websites they deserve
                 to stand out from the competition.
             </p>
 
             <div class="flex items-center justify-end">
-                <div class="cursor-pointer rounded-full relative grid place-content-center p-16 glass
-                        hover:scale-[1.1] transition-all">
+                <a href="#about"
+                    class="cursor-pointer rounded-full relative grid place-content-center p-16 glass hover:scale-[1.1] transition-all">
                     <ArrowDown class="w-12 fill-white" />
-                    <span class="text-ring font-semibold"></span>
-                </div>
+                    <span class="hero-circle-text font-semibold"></span>
+                </a>
             </div>
         </div>
     </section>
@@ -66,15 +43,8 @@ onMounted(() => {
         radial-gradient(at 130% 110%, rgb(59, 104, 230) 0, hsla(192, 91%, 57%, 0) 50%);
 }
 
-.glass {
-    background: rgba(255, 255, 255, 0.02);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.8px);
-    -webkit-backdrop-filter: blur(4.8px);
-}
-
 @supports not (top: calc(sin(1) * 1px)) {
-    .text-ring {
+    .hero-circle-text {
         display: none;
     }
 }
