@@ -22,8 +22,8 @@ import { RouterLink } from "vue-router";
                                 </RouterLink>
                             </div>
                             <p class="w-[70%] text-myGray-500 leading-7 mb-8">
-                                Let's partner-up and witness the
-                                transformation of your website into a powerful asset for success.
+                                Feel free to reach-out to me on these platforms or follow me for updates on current and
+                                future projects.
                             </p>
 
                             <div class="flex items-center gap-x-6">
@@ -65,13 +65,13 @@ import { RouterLink } from "vue-router";
                             <div class="text-xl tracking-wide mb-4">Legal</div>
                             <ul class="text-myGray-500 flex flex-col gap-y-3">
                                 <li class="hover:text-white">
-                                    <a href="#">Approach</a>
+                                    <span>Approach</span>
                                 </li>
                                 <li class="hover:text-white">
-                                    <a href="#">Agreement</a>
+                                    <span>Agreement</span>
                                 </li>
                                 <li class="hover:text-white">
-                                    <a href="#">Privacy Policy</a>
+                                    <span>Privacy Policy</span>
                                 </li>
                             </ul>
                         </div>

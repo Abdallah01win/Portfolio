@@ -1,4 +1,5 @@
-.text-ring [style*="--index"] {
+.hero-circle-text [style*="--index"],
+.contact-circle-text [style*="--index"] {
   /* In "ch" units */
   --inner-angle: calc((360 / var(--total)) * 1deg);
   --radius: calc((var(--character-width, 1) / sin(var(--inner-angle))) * -1ch);
@@ -16,6 +17,10 @@
   color: white;
   line-height: 1;
 }
+.contact-circle-text .dg :is(.cr.string, .cr.number) input[type="text"] {
+  color: #0c0c0c;
+  line-height: 1;
+}
 
 .sr-only {
   position: absolute;
@@ -27,4 +32,11 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
 }

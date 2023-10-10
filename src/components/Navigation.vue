@@ -22,7 +22,8 @@ import { RouterLink } from 'vue-router';
         </li>
       </ul>
 
-      <div class="cursor-pointer border border-myGray-400/40 rounded-full px-8 py-2 tracking-wide text-sm">Contact</div>
+      <a href="#contact"
+        class="cursor-pointer border border-myGray-400/40 rounded-full px-8 py-2 tracking-wide text-sm">Contact</a>
     </nav>
   </section>
 </template>

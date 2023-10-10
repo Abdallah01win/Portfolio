@@ -16,7 +16,7 @@ import Projects from "@/components/Projects.vue";
     <Services />
     <ExperienceSection />
     <Testimonials />
-    <!-- <Contact /> -->
+    <Contact />
 
     <!-- <Projects /> -->
   </main>
