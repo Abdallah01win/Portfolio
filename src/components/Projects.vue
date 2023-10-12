@@ -27,7 +27,7 @@ const items = [
     title: "News Magazine Website",
     tags: ['Vue', 'Tailwind', 'Vite'],
     description: "",
-    image: "src/assets/images/projects/optiRik.png",
+    image: "src/assets/images/projects/zaniture.png",
     repo: "",
     preview: ""
   },
@@ -58,8 +58,17 @@ for (let i = 0; i < items.length; i++) {
     </div>
 
     <div class="grid grid-cols-2 gap-12">
-      <div v-for="item in items" :key="item.title" class="rounded-3xl h-80 2xl:h-96 overflow-hidden cursor-pointer">
-        <img :src="item.image" :alt="item.title" class="w-full h-full object-cover rounded-3xl">
+      <div v-for="(item, index) in items" :key="item.title"
+        class="rounded-3xl h-80 2xl:h-96 overflow-hidden cursor-pointer bg-cover"
+        :style="{ 'background-image': `url(${item.image})` }" @mouseenter="showDiv[index] = true"
+        @mouseleave="showDiv[index] = false">
+
+        <div v-show="showDiv[index]" class="h-full bg-myGray-500/30 flex items-center justify-center">
+          <div class="glass rounded-full p-8 hover:scale-[1.1] transition-all">
+            <ArrowUp class="w-14 text-myWhite" />
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
