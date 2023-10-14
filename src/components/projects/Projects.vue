@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import { projects } from "@/helpers/projects.js"
-import ArrowUp from "@/components/icons/ArrowUp.vue";
-import Preview from "./components/Preview.vue"
+import ArrowUp from "@/components/icons/ArrowUp.vue"
+import Preview from "./components/preview.vue"
 
 const showDiv = ref([])
 const project = ref({})
@@ -12,12 +12,19 @@ for (let i = 0; i < projects.length; i++) {
 }
 
 const showPreview = (index) => {
+  document.body.style.overflow = 'hidden';
   project.value = projects[index]
+}
+
+const resetProject = () => {
+  document.body.style.overflow = 'scroll';
+  project.value = {}
 }
 </script>
 
 <template>
-  <section id="projects" class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24 border-b border-myGray-500/40">
+  <section id="projects"
+    class="relative xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24 border-b border-myGray-500/40">
     <div class="mb-10">
       <div class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-lg font-semibold mb-10">
         My work
@@ -42,5 +49,5 @@ const showPreview = (index) => {
     </div>
   </section>
 
-  <Preview :project="project" />
+  <Preview :project="project" @resetProject="resetProject" />
 </template>
