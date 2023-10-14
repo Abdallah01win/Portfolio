@@ -5,7 +5,7 @@ import Services from "@/components/Services.vue";
 import ExperienceSection from "@/components/ExperienceSection.vue";
 import Testimonials from "@/components/Testimonials.vue";
 import Contact from "@/components/Contact.vue";
-import Projects from "@/components/Projects.vue";
+import Projects from "@/components/projects/Projects.vue";
 </script>
 
 <template>

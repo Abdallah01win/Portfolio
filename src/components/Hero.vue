@@ -2,7 +2,7 @@
 import Navigation from "@/components/Navigation.vue";
 import ArrowDown from "@/components/icons/ArrowDown.vue";
 import { onMounted } from 'vue';
-import { circler_text } from '@/functions.js'
+import { circler_text } from '@/helpers/functions.js'
 
 onMounted(() => {
     circler_text('hero-circle-text', "Hi I’m Abdallah Bari • Let’s get started! ")
@@ -18,7 +18,7 @@ onMounted(() => {
             <div class="text-6xl font-primaryBold leading-[1.3] tracking-wide mb-10">
                 Your digital transformation partner for a captivating online presence.
             </div>
-            
+
             <p class="leading-8 text-xl text-myGray-400 w-[70%]">
                 I specialize in giving small and medium-sized businesses the modern and professional websites they deserve
                 to stand out from the competition.

@@ -1,0 +1,37 @@
+export const projects = [
+  {
+    title: "Passworld",
+    tags: ["Vue", "Tailwind", "Vite"],
+    description: "",
+    thumbnail: "src/assets/images/projects/alasturu.png",
+    repo: "https://github.com/Abdallah01win/generated-passwords/tree/mine",
+    preview: "https://passworld.pages.dev/",
+  },
+  {
+    title: "Voyager",
+    tags: ["Vue", "Tailwind", "Vite"],
+    description: "",
+    thumbnail: "src/assets/images/projects/doluma.png",
+    images: [],
+    repo: "",
+    preview: "",
+  },
+  {
+    title: "News Magazine Website",
+    tags: ["Vue", "Tailwind", "Vite"],
+    description: "",
+    thumbnail: "src/assets/images/projects/zaniture.png",
+    images: [],
+    repo: "",
+    preview: "",
+  },
+  {
+    title: "News Magazine Website",
+    tags: ["Vue", "Tailwind", "Vite"],
+    description: "",
+    thumbnail: "src/assets/images/projects/buildinz.png",
+    images: [],
+    repo: "",
+    preview: "",
+  },
+];
