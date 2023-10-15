@@ -17,7 +17,7 @@ const showPreview = (index) => {
 }
 
 const resetProject = () => {
-  document.body.style.overflow = 'scroll';
+  document.body.style.overflow = '';
   project.value = {}
 }
 </script>

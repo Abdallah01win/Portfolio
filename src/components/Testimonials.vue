@@ -74,8 +74,8 @@ const testimonials = [
   </section>
 </template>
 
-<style>
-.splide__arrow {
+<style scoped>
+:deep(.splide__arrow) {
   background: transparent;
   border: 1px solid #0c0c0c;
   padding: 8px;
