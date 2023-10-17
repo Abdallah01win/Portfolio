@@ -1,38 +1,26 @@
-export const projects = [
+const path = "src/assets/images/projects/";
+
+const projects = [
   {
-    title: "Passworld",
-    tags: ["Vue", "Tailwind", "Vite"],
-    description: "",
-    thumbnail: "src/assets/images/projects/alasturu.webp",
-    images: ["src/assets/images/projects/alasturu.webp"],
-    repo: "https://github.com/Abdallah01win/generated-passwords/tree/mine",
-    preview: "https://passworld.pages.dev/",
+    title: "alasturu",
+    images: [
+      `${path}alasturu/1.webp`,
+      `${path}alasturu/2.webp`,
+      `${path}alasturu/3.webp`,
+    ],
   },
   {
-    title: "Voyager",
-    tags: ["Vue", "Tailwind", "Vite"],
-    description: "",
-    thumbnail: "src/assets/images/projects/doluma.webp",
-    images: ["src/assets/images/projects/doluma.webp"],
-    repo: "",
-    preview: "",
+    title: "doluma",
+    images: [`${path}doluma/1.webp`],
   },
   {
-    title: "News Magazine Website",
-    tags: ["Vue", "Tailwind", "Vite"],
-    description: "",
-    thumbnail: "src/assets/images/projects/zaniture.webp",
-    images: ["src/assets/images/projects/zaniture.webp"],
-    repo: "",
-    preview: "",
+    title: "zaniture",
+    images: [`${path}zaniture/1.webp`],
   },
   {
-    title: "News Magazine Website",
-    tags: ["Vue", "Tailwind", "Vite"],
-    description: "",
-    thumbnail: "src/assets/images/projects/buildinz.webp",
-    images: ["src/assets/images/projects/buildinz.webp"],
-    repo: "",
-    preview: "",
+    title: "buildinz",
+    images: [`${path}buildinz/1.webp`],
   },
 ];
+
+export { projects };

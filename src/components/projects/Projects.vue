@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { projects } from "@/helpers/projects.js"
 import ArrowUp from "@/components/icons/ArrowUp.vue"
-import Preview from "./components/preview.vue"
+import Preview from "./components/Preview.vue"
 
 const showDiv = ref([])
 const project = ref({})
@@ -37,7 +37,7 @@ const resetProject = () => {
 
     <div class="grid grid-cols-2 gap-12">
       <div v-for="(item, index) in projects" :key="item.title" class="rounded-3xl h-80 2xl:h-96 overflow-hidden bg-cover"
-        :style="{ 'background-image': `url(${item.thumbnail})` }" @mouseenter="showDiv[index] = true"
+        :style="{ 'background-image': `url(${item.images[0]})` }" @mouseenter="showDiv[index] = true"
         @mouseleave="showDiv[index] = false">
 
         <div v-show="showDiv[index]" class="h-full bg-myGray-500/30 flex items-center justify-center transition-opacity">
