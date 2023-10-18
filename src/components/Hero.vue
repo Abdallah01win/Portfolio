@@ -42,10 +42,4 @@ onMounted(() => {
         radial-gradient(at 41% 145%, rgb(97, 34, 214) 0, hsla(240, 85%, 69%, 0) 50%),
         radial-gradient(at 130% 110%, rgb(59, 104, 230) 0, hsla(192, 91%, 57%, 0) 50%);
 }
-
-@supports not (top: calc(sin(1) * 1px)) {
-    .hero-circle-text {
-        display: none;
-    }
-}
 </style>
