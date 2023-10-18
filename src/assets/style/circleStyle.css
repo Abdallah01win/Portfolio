@@ -40,3 +40,9 @@
   backdrop-filter: blur(4.8px);
   -webkit-backdrop-filter: blur(4.8px);
 }
+
+@supports not (top: calc(sin(1) * 1px)) {
+  .hero-circle-text, .contact-circle-text {
+    display: none;
+  }
+}

@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials.vue";
 
 import Contact from "@/components/Contact.vue";
 import Projects from "@/components/Projects.vue";
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import Projects from "@/components/Projects.vue";
     <ExperienceSection />
     <Testimonials />
     <Contact />
-
+    <Footer />
     <!-- <Projects /> -->
   </main>
 </template>
