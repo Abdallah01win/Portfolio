@@ -1,8 +1,10 @@
 <script setup>
+import { ref, nextTick, watch } from 'vue'
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
 import X from '@/components/icons/X.vue'
 
+const emit = defineEmits(['resetProject'])
 const props = defineProps({
     project: {
         type: Object,
@@ -10,7 +12,18 @@ const props = defineProps({
     }
 })
 
-const emit = defineEmits(['resetProject'])
+const isPreviewShown = ref(false)
+
+watch(() => props.project.title, () => {
+    if (props.project.title) {
+        nextTick(() => isPreviewShown.value = true)
+    }
+}, { deep: true })
+
+const closePreview = () => {
+    isPreviewShown.value = false
+    emit('resetProject')
+}
 
 const options = {
     type: "loop",
@@ -21,13 +34,13 @@ const options = {
         arrow: 'splide__arrow splide__preview',
     },
 };
-</script>
+</script>   
 
 <template>
-    <div :class="{ 'hidden': !props.project?.title }" @keydown.escape="emit('resetProject')"
+    <div v-if="isPreviewShown" @keydown.escape="closePreview"
         class="fixed top-0 left-0 w-full h-screen z-10 bg-myGray-500/80 glass" tabindex="0">
         <div class="glass p-3 bg-myWhite rounded-full w-fit absolute right-0 top-0 cursor-pointer mr-6 mt-6 hover:scale-[1.1] transition-all z-20"
-            @click="emit('resetProject')">
+            @click="closePreview">
             <X class="w-5 hover:fill-black" />
         </div>
 
