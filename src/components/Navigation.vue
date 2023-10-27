@@ -9,20 +9,21 @@ import { RouterLink } from 'vue-router';
 
       <ul class="flex items-center gap-x-8 tracking-wide text-sm text-myGray-500">
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="#about">About</a>
         </li>
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">About</RouterLink>
+          <a href="#services">Services</a>
         </li>
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">Services</RouterLink>
+          <a href="#testimonials">Testimonials</a>
         </li>
         <li class="hover:text-white cursor-pointer transition-all">
-          <RouterLink to="/">Projects</RouterLink>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
 
-      <div class="cursor-pointer border border-myGray-400/40 rounded-full px-8 py-2 tracking-wide text-sm">Contact</div>
+      <a href="#contact"
+        class="cursor-pointer border border-myGray-400/40 rounded-full px-8 py-2 tracking-wide text-sm">Contact</a>
     </nav>
   </section>
 </template>

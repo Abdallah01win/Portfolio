@@ -4,36 +4,37 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
 const services = [
     {
         "title": "Custom Website Development",
-        "description": "We create user-friendly interfaces and responsive designs to ensure a seamless and captivating user experience."
+        "description": "I create user-friendly interfaces and responsive designs to ensure a seamless and captivating user experience."
     },
     {
         "title": "Responsive Web Design",
-        "description": "Our responsive designs adapt flawlessly to various screen sizes, keeping your audience engaged."
+        "description": "My responsive designs adapt flawlessly to various screen sizes, keeping your audience engaged."
     },
     {
-        "title": "CMS Integration and Optimization",
-        "description": "Our CMS integration and optimization service provides user-friendly interfaces and ensures peak performance."
+        "title": "SEO integration",
+        "description": "Improve your search engine rankings and attract more organic traffic with comprehensive SEO."
     },
     {
         "title": "Website Maintenance and Support",
-        "description": "We keep your website in prime condition so you can focus on your core activities while we handle technical aspects."
+        "description": "I'll keep your website in prime condition so you can focus on your core activities while I handle technical aspects."
     }
 ]
 </script>
 
 <template>
-    <section class="xl:max-w-[1024px] 2xl:max-w-[1280px]  mx-auto py-24">
+    <section id="services" class="xl:max-w-[1024px] 2xl:max-w-[1280px]  mx-auto py-24">
         <div class="mb-10">
             <div class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-lg font-semibold mb-10">My Services</div>
 
-            <p class="w-[90%] font-primary text-3xl leading-10">My name is Abdallah Bari. I'm a Self-thought software
-                engineer and web developer with an undying passion for innovation. I utilize my experties in the digital
-                landscape to help businesses gain an edge over the competition.</p>
+            <p class="w-[90%] font-primary text-5xl font-bold leading-[1.1] tracking-wide mb-10">
+                Here are my solutions to transform your website into a user-friendly platform that converts visitors into
+                loyal customers.
+            </p>
         </div>
 
         <div class="grid grid-cols-1 gap-x-8">
             <div class="text-lg">
-                <div v-for="(service, index) in services" :key="service" class="border-b border-myGray-500/40 py-7">
+                <div v-for="service in services" :key="service" class="border-b border-myGray-500/40 py-7">
                     <div class="grid grid-cols-12">
                         <div class="col-span-6 flex items-center gap-x-10">
                             <div class="text-3xl font-primaryBold">{{ service.title }}</div>

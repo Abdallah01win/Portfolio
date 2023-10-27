@@ -2,13 +2,11 @@
 import Hero from "@/components/Hero.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import Services from "@/components/Services.vue";
-import ExperianceSection from "@/components/ExperianceSection.vue";
-import Testemonials from "@/components/Testemonials.vue";
-
-import Projects from "@/components/Projects.vue";
-import TechStack from "@/components/TechStack.vue";
+import ExperienceSection from "@/components/ExperienceSection.vue";
+import Testimonials from "@/components/Testimonials.vue";
 import Contact from "@/components/Contact.vue";
-import TextRow from "@/components/TextRow.vue";
+import Projects from "@/components/projects/Projects.vue";
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -16,12 +14,10 @@ import TextRow from "@/components/TextRow.vue";
     <Hero />
     <AboutMe />
     <Services />
-    <ExperianceSection />
-    <Testemonials />
-
-    <!-- <Projects />
-    <TextRow />
+    <ExperienceSection />
+    <Projects />
+    <Testimonials />
     <Contact />
-    <TechStack /> -->
+    <Footer />
   </main>
 </template>
