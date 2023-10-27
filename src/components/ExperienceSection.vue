@@ -5,7 +5,7 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS
 </script>
 
 <template>
-    <section class="bg-myDark-100">
+    <section class="bg-myDark-100 texture">
         <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24 text-white">
             <div class="border border-white py-2 px-6 w-fit rounded-full text-lg font-medium mb-10 capitalize">why choose
                 me?
@@ -56,3 +56,9 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS
         </div>
     </section>
 </template>
+
+<style scoped>
+.texture {
+    background-image: url('@/assets/images/Texture.png');
+}
+</style>

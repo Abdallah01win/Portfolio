@@ -2,7 +2,7 @@
 import Navigation from "@/components/Navigation.vue";
 import ArrowDown from "@/components/icons/ArrowDown.vue";
 import { onMounted } from 'vue';
-import { circler_text } from '@/functions.js'
+import { circler_text } from '@/helpers/functions.js'
 
 onMounted(() => {
     circler_text('hero-circle-text', "Hi I’m Abdallah Bari • Let’s get started! ")

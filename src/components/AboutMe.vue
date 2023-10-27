@@ -15,7 +15,7 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
         <div>
           <div class="leading-8 text-lg font-medium">
             My name is Abdallah Bari, I'm a seasoned web developer dedicated to crafting exceptional online experiences.
-            With a rich background in web development spanning over 4 years, i've picked up a special combination of
+            With a rich background in web development spanning over 5 years, i've picked up a special combination of
             strategy, design, and marketing that enables me to deliver, not only, flawlessly functioning, but also
             esthetically pleasing websites with a lasting impression.
           </div>
@@ -30,4 +30,5 @@ import ArrowUp from "@/components/icons/ArrowUp.vue";
         </button>
       </div>
     </div>
-  </section></template>
+  </section>
+</template>

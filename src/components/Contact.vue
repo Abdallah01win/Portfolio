@@ -1,7 +1,7 @@
 <script setup>
 import ArrowUp from "@/components/icons/ArrowUp.vue";
 import { onMounted } from 'vue';
-import { circler_text } from '@/functions.js'
+import { circler_text } from '@/helpers/functions.js'
 
 const address = import.meta.env.VITE_MAIL_TO_ADDRESS
 
