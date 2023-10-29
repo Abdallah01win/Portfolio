@@ -14,12 +14,12 @@ onMounted(() => {
         <Navigation ref="nav" />
         <div class="border border-myGray-400/10 p-72 rounded-full absolute -left-28 -bottom-36"></div>
         <div class="border border-myGray-400/10 p-80 rounded-full absolute left-[8%] bottom-[-50%]"></div>
-        <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-28 pb-16">
-            <div class="text-6xl font-primaryBold leading-[1.3] tracking-wide mb-10">
+        <div class="sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-28 pb-16">
+            <div class="md:text-5xl lg:text-6xl font-primaryBold md:leading-[1.35] lg:leading-[1.3] tracking-wide mb-10">
                 Your digital transformation partner for a captivating online presence.
             </div>
 
-            <p class="leading-8 text-xl text-myGray-400 w-[70%]">
+            <p class="leading-8 text-xl text-myGray-400 w-[85%] lg:w-[70%]">
                 I specialize in giving small and medium-sized businesses the modern and professional websites they deserve
                 to stand out from the competition.
             </p>

@@ -37,13 +37,13 @@ const testimonials = [
 </script>
 
 <template>
-  <section id="testimonials" class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-24">
+  <section id="testimonials" class="sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-24">
     <div class="mb-10">
       <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">
         testimonials
       </div>
 
-      <p class="w-[90%] font-primary text-5xl font-bold leading-[1.1] tracking-wide mb-10">
+      <p class="lg:w-[90%] font-primary md:text-4xl xl:text-5xl font-bold leading-[1.1] tracking-wide mb-10">
         Hear it from countless satisfied clients who achieved remarkable results with the impact I've had on their online
         presence.
       </p>
@@ -51,12 +51,12 @@ const testimonials = [
     <div class="border border-myGray-500/40 rounded-3xl">
       <Splide :options="options" aria-label="testimonials">
         <SplideSlide v-for="(item, index) in testimonials" :key="index">
-          <div class="flex flex-col items-center px-12 py-16">
+          <div class="flex flex-col items-center px-12 md:py-10 lg:py-16">
             <div>
               <Quote class="w-8 h-8 text-myGray-500/40 mb-9" />
             </div>
-            <div class="text-3xl font-primaryBold mb-3">"{{ item.title }}"</div>
-            <p class="leading-8 text-lg font-medium text-center w-[80%] mx-auto mb-6">
+            <div class="text-3xl font-primaryBold md:mb-5 lg:mb-3">"{{ item.title }}"</div>
+            <p class="leading-8 md:text-base lg:text-lg font-medium text-center w-[85%] lg:w-[80%] mx-auto mb-6">
               "{{ item.text }}"
             </p>
             <div class="inline-flex items-center">

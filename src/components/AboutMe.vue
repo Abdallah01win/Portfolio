@@ -3,13 +3,14 @@ import { RouterLink } from "vue-router";
 import ArrowUp from "@/components/icons/ArrowUp.vue";
 </script>
 <template>
-  <section id="about" class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24 border-b border-myGray-500/40">
-    <div class="grid grid-cols-[.6fr,1fr]">
+  <section id="about"
+    class="sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-24 border-b border-myGray-500/40">
+    <div class="grid md:grid-cols-[.5fr,1fr] lg:grid-cols-[.6fr,1fr]">
       <div class="border border-myDark-100 py-2 px-6 w-fit h-fit rounded-full text-lg font-semibold mb-10 capitalize">
         about me
       </div>
       <div>
-        <p class="font-primary text-5xl font-semibold leading-[1.1] tracking-wide mb-8">
+        <p class="font-primary md:text-4xl xl:text-5xl font-semibold leading-[1.1] tracking-wide mb-8">
           I turn websites into powerful online assets that maximize your digital potential.
         </p>
         <div>
