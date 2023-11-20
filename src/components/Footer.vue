@@ -7,10 +7,12 @@ import { RouterLink } from "vue-router";
 <template>
     <section class="bg-myDark-100 mesh">
         <footer
-            class="sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto text-white">
+            class="3xs:max-w-[320px] 2xs:max-w-[360px] xs:max-w-[390px] sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto text-white">
             <div class="py-16">
                 <div class="flex items-center mb-12 md:mb-16">
-                    <div class="sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-primaryBold">Let's elevate your business!</div>
+                    <div class="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-primaryBold">
+                        Let's elevate your
+                        business!</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-[1fr,0.7fr] gap-y-10 md:gap-y-0">
 
@@ -79,7 +81,7 @@ import { RouterLink } from "vue-router";
                 </div>
             </div>
 
-            <div class="text-center py-8 tracking-wide text-myGray-500 border-t border-myGray-500/30">
+            <div class="text-sm md:text-base text-center py-8 tracking-wide text-myGray-500 border-t border-myGray-500/30">
                 &#169; Copyright 2023 Abdallah Bari. All rights reserved.
             </div>
         </footer>
