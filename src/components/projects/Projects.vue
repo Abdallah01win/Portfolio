@@ -37,15 +37,16 @@ const resetProject = () => {
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xs:gap-14 sm:gap-16 lg:gap-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 sm:gap-16 lg:gap-12">
       <div v-for="(item, index) in projects" :key="item.title"
         class="rounded-3xl h-56 sm:h-72 md:h-80 lg:h-72 xl:h-80 2xl:h-96 overflow-hidden bg-cover"
         :style="{ 'background-image': `url(${item.images[0]})` }" @mouseenter="showDiv[index] = true"
         @mouseleave="showDiv[index] = false">
 
         <div v-show="showDiv[index]" class="h-full bg-myGray-500/30 flex items-center justify-center transition-opacity">
-          <div class="glass rounded-full p-8 hover:scale-[1.1] transition-all cursor-pointer" @click="showPreview(index)">
-            <ArrowUp class="w-14 text-myWhite" />
+          <div class="glass rounded-full p-6 sm:p-8 hover:scale-[1.1] transition-all cursor-pointer"
+            @click="showPreview(index)">
+            <ArrowUp class="w-12 sm:w-14 text-myWhite" />
           </div>
         </div>
       </div>

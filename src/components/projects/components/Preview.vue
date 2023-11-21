@@ -46,8 +46,8 @@ const options = {
 
         <Splide :options="options" aria-label="projectImages">
             <SplideSlide v-for="(image, index) in project.images" :key="index">
-                <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto">
-                    <img :src="image" :alt="project?.title" class="w-full h-screen">
+                <div class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto flex items-center h-screen">
+                    <img :src="image" :alt="project?.title" class="w-full h-[65%] md:h-screen">
                 </div>
             </SplideSlide>
         </Splide>

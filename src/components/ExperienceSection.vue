@@ -27,7 +27,7 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS
                     </a>
                 </div>
 
-                <div class="leading-7 sm:leading-8 text-base sm:text-lg font-medium">
+                <div class="leading-8 text-base sm:text-lg font-medium">
                     <p class="mb-8">
                         I'm here to listen, understand your unique needs, and tailor a web solution that's as unique as your
                         business. Expect open and transparent communication throughout our partnership, ensuring that your
@@ -42,7 +42,7 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS
                 </div>
             </div>
             <div
-                class="flex items-center justify-between mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                class="flex items-center justify-between mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-sm:text-center">
                 <div>
                     <div class="mb-3 font-medium">05+</div>
                     <div class="text-sm sm:text-base md:text-lg lg:text-xl">Years of Experience</div>
