@@ -45,7 +45,7 @@ onMounted(() => {
         radial-gradient(at 130% 110%, rgb(59, 104, 230) 0, hsla(192, 91%, 57%, 0) 50%);
 }
 
-@media screen and (max-height: 1024px) {
+@media screen and (max-height: 930px) {
     .screen {
         height: 100vh;
     }

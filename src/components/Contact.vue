@@ -12,7 +12,7 @@ onMounted(() => {
 
 <template>
   <section id="contact"
-    class="3xs:max-w-[320px] 2xs:max-w-[360px] xs:max-w-[390px] sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-24 mb-28 relative">
+    class="3xs:max-w-[320px] 2xs:max-w-[360px] xs:max-w-[390px] sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto pt-14 sm:pt-18 md:pt-24 mb-28 relative">
     <div>
       <div
         class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-base lg:text-lg font-semibold mb-6 sm:mb-8 lg:mb-10">
