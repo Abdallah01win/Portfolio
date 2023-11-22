@@ -16,7 +16,7 @@ import Footer from '@/components/Footer.vue';
     <Services />
     <ExperienceSection />
     <Projects />
-    <Testimonials />
+    <!-- <Testimonials /> -->
     <Contact />
     <Footer />
   </main>
