@@ -1,7 +1,8 @@
 <script setup>
+import { ref } from 'vue'
 import ArrowUp from "@/components/icons/ArrowUp.vue";
 
-const services = [
+const services = ref([
     {
         "title": "Custom Website Development",
         "description": "I create user-friendly interfaces and responsive designs to ensure a seamless and captivating user experience."
@@ -18,7 +19,18 @@ const services = [
         "title": "Website Maintenance & Support",
         "description": "I'll keep your website in prime condition so you can focus on your core activities while I handle technical aspects."
     }
-]
+])
+
+const toggleAccordion = (index) => {
+    services.value.forEach((s, i) => {
+        s.isOpen = i === index ? !s.isOpen : false;
+    });
+};
+
+const showDescription = ref([])
+for (let i = 0; i < services.length; i++) {
+    showDescription.value.push(false);
+}
 </script>
 
 <template>
@@ -45,11 +57,12 @@ const services = [
                         <div class="col-span-6 text-myGray-400 text-base leading-5 max-md:hidden">
                             {{ service.description }}
                         </div>
-                        <div
-                            class="col-span-2 max-md:flex hidden items-center justify-end cursor-pointer transition-all duration-[0.3s]">
-                            <ArrowUp class="w-6 md:w-8" />
+                        <div class="col-span-2 max-md:flex hidden items-center justify-end cursor-pointer transition-all duration-[0.3s]"
+                            @click="toggleAccordion(index)">
+                            <ArrowUp class="w-6 md:w-8 transition-all" :class="{ 'rotate-180': service.isOpen }" />
                         </div>
                     </div>
+                    <div v-if="service.isOpen" class="mt-3">{{ service.description }}</div>
                 </div>
             </div>
         </div>

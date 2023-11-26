@@ -18,10 +18,8 @@ import { RouterLink } from "vue-router";
 
                     <div>
                         <div class="flex items-center gap-x-6 mb-3">
-                            <RouterLink to="/">
-                                <span class="tracking-wide text-xl">
-                                    Abdallah Bari
-                                </span>
+                            <RouterLink to="/" class="font-bold text-xl">Abdallah<span
+                                    class="text-myGray-500 italic">Bari</span>
                             </RouterLink>
                         </div>
                         <p class="md:w-[70%] text-myGray-500 leading-7 mb-8">
