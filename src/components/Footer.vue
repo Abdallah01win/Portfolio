@@ -6,47 +6,47 @@ import { RouterLink } from "vue-router";
 </script>
 <template>
     <section class="bg-myDark-100 mesh">
-        <footer class="xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto text-white">
+        <footer
+            class="3xs:max-w-[320px] 2xs:max-w-[360px] xs:max-w-[390px] sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto text-white">
             <div class="py-16">
-                <div class="flex items-center mb-16">
-                    <div class="text-9xl font-primaryBold">Let's elevate your business!</div>
+                <div class="flex items-center mb-12 md:mb-16">
+                    <div class="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-primaryBold">
+                        Let's elevate your
+                        business!</div>
                 </div>
-                <div class="grid grid-cols-[1fr,0.7fr]">
-                    <div>
-                        <div>
-                            <div class="flex items-center gap-x-6 mb-3">
-                                <RouterLink to="/">
-                                    <span class="tracking-wide text-xl">
-                                        Abdallah Bari
-                                    </span>
-                                </RouterLink>
-                            </div>
-                            <p class="w-[70%] text-myGray-500 leading-7 mb-8">
-                                Feel free to reach-out to me on these platforms or follow me for updates on current and
-                                future projects.
-                            </p>
+                <div class="grid grid-cols-1 md:grid-cols-[1fr,0.7fr] gap-y-10 md:gap-y-0">
 
-                            <div class="flex items-center gap-x-6">
-                                <span class="hover:scale-[1.1] transition-all">
-                                    <a href="https://github.com/Abdallah01win" target="_blank" title="GitHub">
-                                        <GithubLogo class="w-6 fill-white" />
-                                    </a>
-                                </span>
-                                <span class="hover:scale-[1.1] transition-all">
-                                    <a href="https://twitter.com/AbdallahDev01" target="_blank" title="Twitter">
-                                        <TwitterLogo class="w-6 fill-white" />
-                                    </a>
-                                </span>
-                                <span class="hover:scale-[1.1] transition-all">
-                                    <a href="https://www.linkedin.com/in/abdallahbari" target="_blank" title="LinkedIn">
-                                        <LinkedInLogo class="w-6 fill-white" />
-                                    </a>
-                                </span>
-                            </div>
+                    <div>
+                        <div class="flex items-center gap-x-6 mb-3">
+                            <RouterLink to="/" class="font-bold text-xl">Abdallah<span
+                                    class="text-myGray-500 italic">Bari</span>
+                            </RouterLink>
+                        </div>
+                        <p class="md:w-[70%] text-myGray-500 leading-7 mb-8">
+                            Feel free to reach-out to me on these platforms or follow me for updates on current and
+                            future projects.
+                        </p>
+
+                        <div class="flex items-center gap-x-6">
+                            <span class="hover:scale-[1.1] transition-all">
+                                <a href="https://github.com/Abdallah01win" target="_blank" title="GitHub">
+                                    <GithubLogo class="w-6 fill-white" />
+                                </a>
+                            </span>
+                            <span class="hover:scale-[1.1] transition-all">
+                                <a href="https://twitter.com/AbdallahDev01" target="_blank" title="Twitter">
+                                    <TwitterLogo class="w-6 fill-white" />
+                                </a>
+                            </span>
+                            <span class="hover:scale-[1.1] transition-all">
+                                <a href="https://www.linkedin.com/in/abdallahbari" target="_blank" title="LinkedIn">
+                                    <LinkedInLogo class="w-6 fill-white" />
+                                </a>
+                            </span>
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-x-14 justify-end">
+                    <div class="flex items-start gap-x-14 md:justify-end">
                         <div>
                             <div class="text-xl tracking-wide mb-4">Links</div>
                             <ul class="text-myGray-500 flex flex-col gap-y-3">
@@ -79,7 +79,7 @@ import { RouterLink } from "vue-router";
                 </div>
             </div>
 
-            <div class="text-center py-8 tracking-wide text-myGray-500 border-t border-myGray-500/30">
+            <div class="text-sm md:text-base text-center py-8 tracking-wide text-myGray-500 border-t border-myGray-500/30">
                 &#169; Copyright 2023 Abdallah Bari. All rights reserved.
             </div>
         </footer>
