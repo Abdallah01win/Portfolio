@@ -22,17 +22,6 @@ const testimonials = [
     },
     text: "For so long, I have struggled with establishing a strong online presence. Abdallah provided expertise and insights that I, even with my technical background, found invaluable. He was able to understand and easily communicate my values and vision in a way that resonated with my target audience. It's always a pleasure to work with him.",
   },
-  // {
-  //   name: "Hicham Terben",
-  //   title: "Graphic Designer",
-  //   role: "Graphic Designer",
-  //   Image: "https://dummyimage.com/106x106",
-  //   links: {
-  //     twitter: "https://twitter.com/hixham_t?s=20",
-  //     linkedin: "https://www.linkedin.com/in/hicham-terben",
-  //   },
-  //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus?",
-  // },
 ];
 </script>
 

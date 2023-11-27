@@ -1,5 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+
+const address = import.meta.env.VITE_MAIL_TO_ADDRESS
 </script>
 <template>
   <section class="text-white">
@@ -22,7 +24,7 @@ import { RouterLink } from 'vue-router';
         </li>
       </ul>
 
-      <a href="#contact"
+      <a :href="`https://mail.google.com/mail/?view=cm&fs=1&to=${address}`" target="_blank"
         class="cursor-pointer border border-myGray-400/40 rounded-full px-8 py-2 tracking-wide text-sm">Contact</a>
     </nav>
   </section>
