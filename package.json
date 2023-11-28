@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@splidejs/vue-splide": "^0.6.12",
+    "prettier": "^3.1.0",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
