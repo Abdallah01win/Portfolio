@@ -42,7 +42,8 @@
 }
 
 @supports not (top: calc(sin(1) * 1px)) {
-  .hero-circle-text, .contact-circle-text {
+  .hero-circle-text,
+  .contact-circle-text {
     display: none;
   }
 }

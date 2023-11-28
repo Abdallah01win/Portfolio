@@ -1,12 +1,12 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import VueSplide from '@splidejs/vue-splide'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import VueSplide from "@splidejs/vue-splide";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(router)
-app.use( VueSplide );
-app.mount('#app')
+app.use(router);
+app.use(VueSplide);
+app.mount("#app");
