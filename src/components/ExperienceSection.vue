@@ -44,8 +44,8 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
           <p>
             Because excellence lies in the details, I pay carful attention to
             all aspects of a successful business website that will set you ahead
-            of the competition. Your success is my success, I and I'm dedicated
-            to make it happen.
+            of the competition. Your success is my success, and I'm dedicated to
+            make it happen.
           </p>
         </div>
       </div>
