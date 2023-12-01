@@ -42,7 +42,7 @@ onMounted(() => {
       <div class="flex items-center justify-end">
         <a
           href="#about"
-          class="cursor-pointer rounded-full relative grid place-content-center p-16 glass hover:scale-[1.1] transition-all"
+          class="cursor-pointer rounded-full relative grid place-content-center p-16 glass hover:scale-[1.1] transition-all noTapHeightlight"
         >
           <ArrowDown class="w-12 fill-white" />
           <span class="hero-circle-text font-semibold"></span>
