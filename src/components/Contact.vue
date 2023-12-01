@@ -33,7 +33,7 @@ onMounted(() => {
       <a
         :href="`https://mail.google.com/mail/?view=cm&fs=1&to=${address}`"
         target="_blank"
-        class="cursor-pointer rounded-full relative grid place-content-center p-16 glass hover:scale-[1.1] transition-all"
+        class="cursor-pointer rounded-full relative grid place-content-center p-16 glass hover:scale-[1.1] transition-all noTapHeightlight"
       >
         <ArrowUp class="w-12 fill-myDark-100" />
         <span class="contact-circle-text font-semibold text-myDark-100"></span>

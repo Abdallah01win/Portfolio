@@ -54,12 +54,12 @@ for (let i = 0; i < services.length; i++) {
               {{ service.description }}
             </div>
             <div
-              class="col-span-2 max-md:flex hidden items-center justify-end cursor-pointer transition-all duration-[0.3s]"
-              @click="toggleAccordion(index)"
+              class="col-span-2 max-md:flex hidden items-center justify-end cursor-pointer transition-all duration-[0.3s] noTapHeightlight"
             >
               <ArrowUp
                 class="w-6 md:w-8 transition-all"
                 :class="{ 'rotate-180': service.isOpen }"
+                @click="toggleAccordion(index)"
               />
             </div>
           </div>
