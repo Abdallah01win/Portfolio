@@ -1,9 +1,7 @@
 <script setup>
 import ArrowUp from "@/components/icons/ArrowUp.vue";
 import { onMounted } from "vue";
-import { circler_text } from "@/helpers/functions.js";
-
-const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
+import { circler_text, getMailToAddress } from "@/helpers/functions.js";
 
 onMounted(() => {
   circler_text("contact-circle-text", "Get in touch and • Let’s get started! ");
@@ -31,7 +29,7 @@ onMounted(() => {
     </div>
     <div class="md:absolute bottom-0 right-0 w-fit">
       <a
-        :href="`https://mail.google.com/mail/?view=cm&fs=1&to=${address}`"
+        :href="getMailToAddress()"
         target="_blank"
         class="cursor-pointer rounded-full relative grid place-content-center p-16 glass hover:scale-[1.1] transition-all noTapHeightlight"
       >

@@ -50,6 +50,7 @@ const resetProject = () => {
         :style="{ 'background-image': `url(${item.images[0]})` }"
         @mouseenter="showDiv[index] = true"
         @mouseleave="showDiv[index] = false"
+        @click.self="showPreview(index)"
       >
         <div
           v-show="showDiv[index]"

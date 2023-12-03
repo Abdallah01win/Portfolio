@@ -1,8 +1,8 @@
 <script setup>
 import { RouterLink } from "vue-router";
-
-const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
+import { getMailToAddress } from "@/helpers/functions";
 </script>
+
 <template>
   <section class="text-white">
     <nav
@@ -21,16 +21,16 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
         <li class="hover:text-white cursor-pointer transition-all">
           <a href="#services">Services</a>
         </li>
-        <li class="hover:text-white cursor-pointer transition-all">
+        <!-- <li class="hover:text-white cursor-pointer transition-all">
           <a href="#testimonials">Testimonials</a>
-        </li>
+        </li> -->
         <li class="hover:text-white cursor-pointer transition-all">
           <a href="#projects">Projects</a>
         </li>
       </ul>
 
       <a
-        :href="`https://mail.google.com/mail/?view=cm&fs=1&to=${address}`"
+        :href="getMailToAddress()"
         target="_blank"
         class="cursor-pointer border border-myGray-400/40 rounded-full px-8 py-2 tracking-wide text-sm"
         >Contact</a
