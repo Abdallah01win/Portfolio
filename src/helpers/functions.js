@@ -1,4 +1,10 @@
-export function circler_text(elementClass, text) {
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent,
+  );
+}
+
+function circler_text(elementClass, text) {
   const RING = document.querySelector(`.${elementClass}`);
 
   const OPTIONS = {
@@ -26,3 +32,14 @@ export function circler_text(elementClass, text) {
 
   onUpdate();
 }
+
+function getMailToAddress() {
+  const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
+  const link = isMobile()
+    ? "mailto:"
+    : "https://mail.google.com/mail/?view=cm&fs=1&to=";
+
+  return `${link}${address}`;
+}
+
+export { circler_text, getMailToAddress };

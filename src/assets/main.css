@@ -10,3 +10,7 @@
   font-family: CabinetBold;
   src: url("fonts/CabinetGrotesk-Bold.ttf") format("truetype");
 }
+
+.noTapHeightlight {
+  -webkit-tap-highlight-color: transparent;
+}
