@@ -62,7 +62,7 @@ const options = {
           <img
             :src="image"
             :alt="project?.title"
-            class="w-full h-[60%] md:h-[65%] lg:h-full"
+            class="w-full h-[50%] sm:h-[60%] md:h-[65%] lg:h-full"
           />
         </div>
       </SplideSlide>

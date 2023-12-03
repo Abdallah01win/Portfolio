@@ -68,4 +68,10 @@ onMounted(() => {
     height: 100vh;
   }
 }
+
+@media screen and (max-height: 600px) {
+  .screen {
+    height: auto;
+  }
+}
 </style>

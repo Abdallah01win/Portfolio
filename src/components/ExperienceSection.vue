@@ -1,7 +1,6 @@
 <script setup>
 import ArrowUp from "@/components/icons/ArrowUp.vue";
-
-const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
+import { getMailToAddress } from "@/helpers/functions";
 </script>
 
 <template>
@@ -23,7 +22,7 @@ const address = import.meta.env.VITE_MAIL_TO_ADDRESS;
           </p>
 
           <a
-            :href="`https://mail.google.com/mail/?view=cm&fs=1&to=${address}`"
+            :href="getMailToAddress()"
             target="_blank"
             class="bg-white text-myDark-100 text-lg mt-10 tracking-wide font-semibold rounded-full py-2 px-8 mr-4 flex items-center gap-x-4 w-fit"
           >
