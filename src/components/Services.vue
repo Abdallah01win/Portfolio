@@ -49,7 +49,7 @@ for (let i = 0; i < services.length; i++) {
               </div>
             </div>
             <div
-              class="col-span-6 text-myGray-100 text-base leading-5 max-md:hidden"
+              class="col-span-6 text-base leading-5 max-md:hidden"
             >
               {{ service.description }}
             </div>
