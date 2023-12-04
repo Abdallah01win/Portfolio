@@ -23,7 +23,7 @@ for (let i = 0; i < services.length; i++) {
   >
     <div class="mb-10">
       <div
-        class="border border-myDark-100 py-2 px-6 w-fit rounded-full text-base lg:text-lg font-semibold mb-6 sm:mb-8 lg:mb-10"
+        class="border border-myDark py-2 px-6 w-fit rounded-full text-base lg:text-lg font-semibold mb-6 sm:mb-8 lg:mb-10"
       >
         My Services
       </div>
@@ -39,7 +39,7 @@ for (let i = 0; i < services.length; i++) {
         <div
           v-for="(service, index) in services"
           :key="service"
-          class="border-b border-myGray-500/40 pb-5 md:pb-7"
+          class="border-b border-myGray-200/40 pb-5 md:pb-7"
           :class="{ 'pt-5 md:pt-7': index !== 0 }"
         >
           <div class="grid grid-cols-12 max-md:gap-x-0 gap-x-10">
@@ -49,7 +49,7 @@ for (let i = 0; i < services.length; i++) {
               </div>
             </div>
             <div
-              class="col-span-6 text-myGray-400 text-base leading-5 max-md:hidden"
+              class="col-span-6 text-myGray-100 text-base leading-5 max-md:hidden"
             >
               {{ service.description }}
             </div>
