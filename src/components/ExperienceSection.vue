@@ -4,28 +4,21 @@ import { getMailToAddress } from "@/helpers/functions";
 </script>
 
 <template>
-  <section class="bg-myDark-100 texture">
+  <section class="bg-myDark texture">
     <div
-      class="3xs:max-w-[320px] 2xs:max-w-[360px] xs:max-w-[390px] sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-14 sm:py-18 md:py-24 text-white"
-    >
+      class="3xs:max-w-[320px] 2xs:max-w-[360px] xs:max-w-[390px] sm:max-w-[475px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto py-14 sm:py-18 md:py-24 text-white">
       <div
-        class="border border-white py-2 px-6 w-fit rounded-full text-base lg:text-lg font-medium mb-6 sm:mb-8 lg:mb-10 capitalize"
-      >
+        class="border border-white py-2 px-6 w-fit rounded-full text-base lg:text-lg font-medium mb-6 sm:mb-8 lg:mb-10 capitalize">
         why choose me?
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-0">
         <div>
-          <p
-            class="lg:w-[90%] font-primary text-3xl xs:text-4xl xl:text-5xl leading-[1.35] md:leading-[1.1]"
-          >
+          <p class="lg:w-[90%] font-primary text-3xl xs:text-4xl xl:text-5xl leading-[1.35] md:leading-[1.1]">
             I'm not here to push pre-made solutions onto your project.
           </p>
 
-          <a
-            :href="getMailToAddress()"
-            target="_blank"
-            class="bg-white text-myDark-100 text-lg mt-10 tracking-wide font-semibold rounded-full py-2 px-8 mr-4 flex items-center gap-x-4 w-fit"
-          >
+          <a :href="getMailToAddress()" target="_blank"
+            class="bg-white text-myDark text-lg mt-10 tracking-wide font-semibold rounded-full py-2 px-8 mr-4 flex items-center gap-x-4 w-fit">
             <span>Let's work together!</span>
             <span>
               <ArrowUp class="w-6" />
@@ -49,8 +42,7 @@ import { getMailToAddress } from "@/helpers/functions";
         </div>
       </div>
       <div
-        class="flex items-center justify-between mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-sm:text-center"
-      >
+        class="flex items-center justify-between mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-sm:text-center">
         <div>
           <div class="mb-3 font-medium">05+</div>
           <div class="text-sm sm:text-base md:text-lg lg:text-xl">
