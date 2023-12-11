@@ -1,6 +1,6 @@
 # Portfolio
 
-My SPA portfolio website was built with Vue.js, Vite, and TailwindCSS. It includes a brief introduction to my work experience, the services I provide, and projects I realized as a web developer.
+My SPA portfolio website, built with Vue.js, Vite, and TailwindCSS. It includes a brief introduction to my work experience, the services I provide, and projects I realized as a web developer.
 
 ## Features
 
